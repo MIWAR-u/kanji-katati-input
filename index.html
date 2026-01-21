@@ -2,7 +2,7 @@
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
-    <title>漢字部首検索アプリ - 完全LODリンク対応版</title>
+    <title>漢字カタチ検索アプリ</title>
     <style>
         /* CSSは元のデザインを厳守 */
         * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -23,7 +23,7 @@
 </head>
 <body>
     <div class="container">
-        <h1>🔍 漢字部首検索 (Graph Link Match)</h1>
+        <h1>🔍 漢字カタチ検索 (Graph Link Match)</h1>
         <div class="file-upload">
             <label>TTLファイルを読み込む:</label>
             <input type="file" id="ttlFile" accept=".ttl" />
@@ -38,7 +38,7 @@
     <script>
         let kanjiData = [];
         let resourceMap = {};
-        let charToUriMap = {};
+        let charToUriMap = {}; 
 
         const ttlFileInput = document.getElementById('ttlFile');
         const searchInput = document.getElementById('searchInput');
@@ -65,10 +65,10 @@
                 if (!subjectMatch) return;
                 const uri = subjectMatch[1];
                 const id = uri.split('/').pop().replace('+', '');
-
-                const data = {
-                    uri: uri, unicode: "", tsukuri: "",
-                    namae: [], yomi: [], daihyo: "", alts: [], groups: []
+                
+                const data = { 
+                    uri: uri, unicode: "", tsukuri: "", 
+                    namae: [], yomi: [], daihyo: "", alts: [], groups: [] 
                 };
 
                 lines.forEach(line => {
@@ -119,7 +119,7 @@
                     // 1. 本人の情報と一致
                     if (item.tsukuri === qChar || item.namae.some(n => n.includes(qChar))) return true;
                     // 2. 構成要素(URIリンク)を辿って一致するか
-                    return item.groups.some(group =>
+                    return item.groups.some(group => 
                         group.some(gUri => {
                             if (tUri && gUri === tUri) return true;
                             // リンク先の情報を解決して文字を比較
