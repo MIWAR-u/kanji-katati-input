@@ -1,0 +1,2544 @@
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix cc:   <http://creativecommons.org/ns#> .
+@prefix res:  <http://example.org/katati/resource/> .
+@prefix dic:  <http://example.org/katati_dic/resource/> .
+@prefix prop: <http://linkdata.org/property/rdf1s10400i#> .
+@base <http://example.org/katati/> .
+
+<http://example.org/katati/>
+      cc:attributionName "三輪玲以佳"@ja ;
+      cc:license <http://creativecommons.org/publicdomain/zero/1.0/deed.ja> .
+
+<http://example.org/katati_dic/resource/U+FF5C>
+      prop:Unicode "U+FF5C"@ja ;
+      prop:代表値 "｜"@ja ;
+      prop:別の言い方 "たて"@ja ;
+      prop:別の言い方 "|"@ja ;
+      prop:別の言い方 "縦"@ja ;
+      prop:別の言い方 "I"@ja ;
+      .
+
+<http://example.org/katati_dic/resource/U+30FC>
+      prop:Unicode "U+30FC"@ja ;
+      prop:代表値 "ー"@ja ;
+      prop:別の言い方 "-"@ja ;
+      prop:別の言い方 "－"@ja ;
+      prop:別の言い方 "一"@ja ;
+      prop:別の言い方 "よこ"@ja ;
+      prop:別の言い方 "横"@ja ;
+      prop:別の言い方 "―"@ja ;
+      .
+
+<http://example.org/katati_dic/resource/U+FF0B>
+      prop:Unicode "U+FF0B"@ja ;
+      prop:代表値 "＋"@ja ;
+      prop:別の言い方 "+"@ja ;
+      prop:別の言い方 "たす"@ja ;
+      prop:別の言い方 "十"@ja ;
+      prop:別の言い方 "｜,－"@ja ;
+      prop:別の言い方 "プラス"@ja ;
+      prop:別の言い方 "ナ"@ja ;
+      .
+
+<http://example.org/katati_dic/resource/U+30EC>
+      prop:Unicode "U+30EC"@ja ;
+      prop:代表値 "レ"@ja ;
+      prop:別の言い方 "し"@ja ;
+      prop:別の言い方 "L"@ja ;
+      .
+
+<http://example.org/katati_dic/resource/U+30E1>
+      prop:Unicode "U+30E1"@ja ;
+      prop:代表値 "メ"@ja ;
+      prop:別の言い方 "ノ,乀"@ja ;
+      prop:別の言い方 "ノ,点"@ja ;
+      .
+
+<http://example.org/katati_dic/resource/U+30CC>
+      prop:Unicode "U+30CC"@ja ;
+      prop:代表値 "ヌ"@ja ;
+      prop:別の言い方 "フ,乀"@ja ;
+      .
+
+<http://example.org/katati_dic/resource/U+30C8>
+      prop:Unicode "U+30C8"@ja ;
+      prop:代表値 "ト"@ja ;
+      prop:別の言い方 "｜,ー"@ja ;
+      .
+
+<http://example.org/katati_dic/resource/U+0054>
+      prop:Unicode "U+0054"@ja ;
+      prop:代表値 "T"@ja ;
+      prop:別の言い方 "｜,ー"@ja ;
+      .
+
+<http://example.org/katati_dic/resource/U+0032>
+      prop:Unicode "U+0032"@ja ;
+      prop:代表値 "2"@ja ;
+      prop:別の言い方 "２"@ja ;
+      .
+
+<http://example.org/katati_dic/resource/U+30AF>
+      prop:Unicode "U+30AF"@ja ;
+      prop:代表値 "ク"@ja ;
+      .
+
+<http://example.org/katati_dic/resource/U+30BF>
+      prop:Unicode "U+30BF"@ja ;
+      prop:代表値 "タ"@ja ;
+      .
+
+<http://example.org/katati_dic/resource/U+30D5>
+      prop:Unicode "U+30D5"@ja ;
+      prop:代表値 "フ"@ja ;
+      .
+
+<http://example.org/katati_dic/resource/U+03A0>
+      prop:Unicode "U+03A0"@ja ;
+      prop:代表値 "Π"@ja ;
+      .
+
+<http://example.org/katati_dic/resource/U+03C0>
+      prop:Unicode "U+03C0"@ja ;
+      prop:代表値 "π"@ja ;
+      .
+
+<http://example.org/katati_dic/resource/U+30D2>
+      prop:Unicode "U+30D2"@ja ;
+      prop:代表値 "ヒ"@ja ;
+      .
+
+<http://example.org/katati_dic/resource/U+0050>
+      prop:Unicode "U+0050"@ja ;
+      prop:代表値 "P"@ja ;
+      prop:別の言い方 "P"@ja ;
+      prop:別の言い方 "p"@ja ;
+      .
+
+<http://example.org/katati_dic/resource/U+0042>
+      prop:Unicode "U+0042"@ja ;
+      prop:代表値 "B"@ja ;
+      prop:別の言い方 "B"@ja ;
+      .
+
+<http://example.org/katati_dic/resource/U+03B2>
+      prop:Unicode "U+03B2"@ja ;
+      prop:代表値 "β"@ja ;
+      .
+
+<http://example.org/katati_dic/resource/U+30E6>
+      prop:Unicode "U+30E6"@ja ;
+      prop:代表値 "ユ"@ja ;
+      .
+
+<http://example.org/katati_dic/resource/U+30B3>
+      prop:Unicode "U+30B3"@ja ;
+      prop:代表値 "コ"@ja ;
+      .
+
+<http://example.org/katati_dic/resource/U+30CE>
+      prop:Unicode "U+30CE"@ja ;
+      prop:代表値 "ノ"@ja ;
+      .
+
+<http://example.org/katati_dic/resource/U+30E0>
+      prop:Unicode "U+30E0"@ja ;
+      prop:代表値 "ム"@ja ;
+      .
+
+<http://example.org/katati_dic/resource/U+0037>
+      prop:Unicode "U+0037"@ja ;
+      prop:代表値 "7"@ja ;
+      prop:別の言い方 "７"@ja ;
+      .
+
+<http://example.org/katati_dic/resource/U+30C4>
+      prop:Unicode "U+30C4"@ja ;
+      prop:代表値 "ツ"@ja ;
+      .
+
+<http://example.org/katati_dic/resource/U+30BD>
+      prop:Unicode "U+30BD"@ja ;
+      prop:代表値 "ソ"@ja ;
+      .
+
+<http://example.org/katati_dic/resource/U+30F3>
+      prop:Unicode "U+30F3"@ja ;
+      prop:代表値 "ン"@ja ;
+      .
+
+<http://example.org/katati_dic/resource/U+30DF>
+      prop:Unicode "U+30DF"@ja ;
+      prop:代表値 "ミ"@ja ;
+      .
+
+<http://example.org/katati_dic/resource/U+3078>
+      prop:Unicode "U+3078"@ja ;
+      prop:代表値 "へ"@ja ;
+      prop:別の言い方 "ヘ"@ja ;
+      .
+
+<http://example.org/katati_dic/resource/U+30DE>
+      prop:Unicode "U+30DE"@ja ;
+      prop:代表値 "マ"@ja ;
+      .
+
+<http://example.org/katati_dic/resource/U+0059>
+      prop:Unicode "U+0059"@ja ;
+      prop:代表値 "Y"@ja ;
+      prop:別の言い方 "Y "@ja ;
+      .
+
+<http://example.org/katati_dic/resource/U+30B5>
+      prop:Unicode "U+30B5"@ja ;
+      prop:代表値 "サ"@ja ;
+      .
+
+<http://example.org/katati_dic/resource/U+30E8>
+      prop:Unicode "U+30E8"@ja ;
+      prop:代表値 "ヨ"@ja ;
+      .
+
+<http://example.org/katati_dic/resource/U+30C6>
+      prop:Unicode "U+30C6"@ja ;
+      prop:代表値 "テ"@ja ;
+      prop:別の言い方 "〒"@ja ;
+      .
+
+<http://example.org/katati_dic/resource/U+304F>
+      prop:Unicode "U+304F"@ja ;
+      prop:代表値 "く"@ja ;
+      .
+
+<http://example.org/katati_dic/resource/U+30EF>
+      prop:Unicode "U+30EF"@ja ;
+      prop:代表値 "ワ"@ja ;
+      .
+
+<http://example.org/katati_dic/resource/U+30EA>
+      prop:Unicode "U+30EA"@ja ;
+      prop:代表値 "リ"@ja ;
+      prop:別の言い方 "り"@ja ;
+      .
+
+<http://example.org/katati_dic/resource/U+30CD>
+      prop:Unicode "U+30CD"@ja ;
+      prop:代表値 "ネ"@ja ;
+      .
+
+<http://example.org/katati_dic/resource/U+30A8>
+      prop:Unicode "U+30A8"@ja ;
+      prop:代表値 "エ"@ja ;
+      .
+
+<http://example.org/katati_dic/resource/U+30A4>
+      prop:Unicode "U+30A4"@ja ;
+      prop:代表値 "イ"@ja ;
+      .
+
+<http://example.org/katati_dic/resource/U+30EB>
+      prop:Unicode "U+30EB"@ja ;
+      prop:代表値 "ル"@ja ;
+      .
+
+<http://example.org/katati_dic/resource/U+30CF>
+      prop:Unicode "U+30CF"@ja ;
+      prop:代表値 "ハ"@ja ;
+      .
+
+<http://example.org/katati_dic/resource/U+30AB>
+      prop:Unicode "U+30AB"@ja ;
+      prop:代表値 "カ"@ja ;
+      .
+
+<http://example.org/katati_dic/resource/U+30B1>
+      prop:Unicode "U+30B1"@ja ;
+      prop:代表値 "ケ"@ja ;
+      .
+
+<http://example.org/katati_dic/resource/U+3048>
+      prop:Unicode "U+3048"@ja ;
+      prop:代表値 "え"@ja ;
+      .
+
+<http://example.org/katati_dic/resource/U+30CB>
+      prop:Unicode "U+30CB"@ja ;
+      prop:代表値 "ニ"@ja ;
+      .
+
+<http://example.org/katati_dic/resource/U+30B7>
+      prop:Unicode "U+30B7"@ja ;
+      prop:代表値 "シ"@ja ;
+      .
+
+<http://example.org/katati_dic/resource/U+203B>
+      prop:Unicode "U+203B"@ja ;
+      prop:代表値 "※"@ja ;
+      .
+
+<http://example.org/katati_dic/resource/U+25A1>
+      prop:Unicode "U+25A1"@ja ;
+      prop:代表値 "□"@ja ;
+      .
+
+<http://example.org/katati_dic/resource/U+30ED>
+      prop:Unicode "U+30ED"@ja ;
+      prop:代表値 "ロ"@ja ;
+      .
+
+<http://example.org/katati/resource/U+4EBB>
+      prop:Unicode "U+4EBB"@ja ;
+      prop:つくり "亻"@ja ;
+      prop:なまえ "にんべん"@ja ;
+      prop:かたち [ rdf:value dic:U30CE, dic:UFF5C ] ;
+      prop:かたち [ rdf:value dic:U30A4 ] ;
+      .
+
+<http://example.org/katati/resource/U+51AB>
+      prop:Unicode "U+51AB"@ja ;
+      prop:つくり "冫"@ja ;
+      prop:なまえ "にすい"@ja ;
+      prop:かたち [ rdf:value dic:U30F3 ] ;
+      prop:かたち [ rdf:value res:U4E36, res:U4E36 ] ;
+      .
+
+<http://example.org/katati/resource/U+6C35>
+      prop:Unicode "U+6C35"@ja ;
+      prop:つくり "氵"@ja ;
+      prop:なまえ "さんずい"@ja ;
+      prop:なまえ "さんずいへん"@ja ;
+      prop:かたち [ rdf:value dic:U30B7 ] ;
+      prop:かたち [ rdf:value res:U4E36, res:U4E36, res:U4E36 ] ;
+      .
+
+<http://example.org/katati/resource/U+624C>
+      prop:Unicode "U+624C"@ja ;
+      prop:つくり "扌"@ja ;
+      prop:なまえ "てへん"@ja ;
+      prop:かたち [ rdf:value res:U624D ] ;
+      prop:かたち [ rdf:value res:U624B ] ;
+      prop:かたち [ rdf:value dic:U30FC, dic:UFF5C, dic:U30FC ] ;
+      prop:かたち [ rdf:value dic:U30FC, dic:UFF5C, dic:U30CE ] ;
+      .
+
+<http://example.org/katati/resource/U+5FC4>
+      prop:Unicode "U+5FC4"@ja ;
+      prop:つくり "忄"@ja ;
+      prop:なまえ "りっしんべん"@ja ;
+      prop:なまえ "したごころ"@ja ;
+      prop:よみ "こころ"@ja ;
+      prop:かたち [ rdf:value res:U5C0F ] ;
+      prop:かたち [ rdf:value dic:UFF5C, res:U4E36, res:U4E36 ] ;
+      .
+
+<http://example.org/katati/resource/U+961D>
+      prop:Unicode "U+961D"@ja ;
+      prop:つくり "阝"@ja ;
+      prop:なまえ "こざとへん"@ja ;
+      prop:なまえ "こざと"@ja ;
+      prop:なまえ "おおざと"@ja ;
+      prop:かたち [ rdf:value dic:U0042 ] ;
+      prop:かたち [ rdf:value dic:U03B2 ] ;
+      prop:かたち [ rdf:value res:みみ ] ;
+      .
+
+<http://example.org/katati/resource/U+571F>
+      prop:Unicode "U+571F"@ja ;
+      prop:つくり "土"@ja ;
+      prop:なまえ "つちへん"@ja ;
+      prop:よみ "つち"@ja ;
+      prop:かたち [ rdf:value res:U5341, dic:U30FC ] ;
+      .
+
+<http://example.org/katati/resource/U+5973>
+      prop:Unicode "U+5973"@ja ;
+      prop:つくり "女"@ja ;
+      prop:なまえ "おんなへん"@ja ;
+      prop:よみ "おんな"@ja ;
+      prop:かたち [ rdf:value dic:U304F, dic:U30CE, dic:U30FC ] ;
+      .
+
+<http://example.org/katati/resource/U+53E3>
+      prop:Unicode "U+53E3"@ja ;
+      prop:つくり "口"@ja ;
+      prop:なまえ "くちへん"@ja ;
+      prop:よみ "くち"@ja ;
+      prop:かたち [ rdf:value res:四角 ] ;
+      prop:かたち [ rdf:value dic:U30ED ] ;
+      prop:かたち [ rdf:value dic:U25A1 ] ;
+      prop:かたち [ rdf:value res:しかく ] ;
+      .
+
+<http://example.org/katati/resource/U+5F73>
+      prop:Unicode "U+5F73"@ja ;
+      prop:つくり "彳"@ja ;
+      prop:なまえ "ぎょうにんべん"@ja ;
+      prop:かたち [ rdf:value dic:U30CE, res:U4EBB ] ;
+      .
+
+<http://example.org/katati/resource/U+72AD>
+      prop:Unicode "U+72AD"@ja ;
+      prop:つくり "犭"@ja ;
+      prop:なまえ "けものへん"@ja ;
+      prop:かたち [ rdf:value dic:U30CE, dic:U30CE, dic:UFF5C ] ;
+      .
+
+<http://example.org/katati/resource/U+5F13>
+      prop:Unicode "U+5F13"@ja ;
+      prop:つくり "弓"@ja ;
+      prop:なまえ "ゆみへん"@ja ;
+      prop:なまえ "ゆみ"@ja ;
+      prop:よみ "ゆみ"@ja ;
+      .
+
+<http://example.org/katati/resource/U+516B>
+      prop:Unicode "U+516B"@ja ;
+      prop:つくり "八"@ja ;
+      prop:なまえ "はちがしら"@ja ;
+      prop:よみ "はち"@ja ;
+      prop:かたち [ rdf:value dic:U30CF ] ;
+      prop:かたち [ rdf:value dic:U30CE, res:U4E40 ] ;
+      .
+
+<http://example.org/katati/resource/U+5DFE>
+      prop:Unicode "U+5DFE"@ja ;
+      prop:つくり "巾"@ja ;
+      prop:なまえ "はばへん"@ja ;
+      prop:なまえ "きんべん"@ja ;
+      prop:よみ "はば"@ja ;
+      prop:よみ "きん"@ja ;
+      prop:かたち [ rdf:value res:U5182, dic:UFF5C ] ;
+      prop:かたち [ rdf:value dic:U30EF, dic:UFF5C ] ;
+      .
+
+<http://example.org/katati/resource/U+5B50>
+      prop:Unicode "U+5B50"@ja ;
+      prop:つくり "子"@ja ;
+      prop:なまえ "こへん"@ja ;
+      prop:なまえ "こ"@ja ;
+      prop:よみ "こ"@ja ;
+      prop:かたち [ rdf:value res:U4E86, dic:U30FC ] ;
+      .
+
+<http://example.org/katati/resource/U+5DE5>
+      prop:Unicode "U+5DE5"@ja ;
+      prop:つくり "工"@ja ;
+      prop:なまえ "たくみへん"@ja ;
+      prop:よみ "たくみ"@ja ;
+      prop:かたち [ rdf:value dic:U30FC, dic:UFF5C, dic:U30FC ] ;
+      prop:かたち [ rdf:value dic:U30A8 ] ;
+      .
+
+<http://example.org/katati/resource/U+6728>
+      prop:Unicode "U+6728"@ja ;
+      prop:つくり "木"@ja ;
+      prop:なまえ "きへん"@ja ;
+      prop:なまえ "き"@ja ;
+      prop:よみ "き"@ja ;
+      prop:かたち [ rdf:value dic:UFF5C, res:U5927 ] ;
+      prop:かたち [ rdf:value dic:U30FC, dic:UFF5C, res:U516B ] ;
+      prop:かたち [ rdf:value dic:U30FC, dic:UFF5C, res:U4EBA ] ;
+      .
+
+<http://example.org/katati/resource/U+6708>
+      prop:Unicode "U+6708"@ja ;
+      prop:つくり "月"@ja ;
+      prop:なまえ "にくづき"@ja ;
+      prop:なまえ "つきへん"@ja ;
+      prop:よみ "つき"@ja ;
+      prop:かたち [ rdf:value dic:U30CE, dic:U30FC, dic:U30FC, dic:U30FC, dic:UFF5C ] ;
+      .
+
+<http://example.org/katati/resource/U+65E5>
+      prop:Unicode "U+65E5"@ja ;
+      prop:つくり "日"@ja ;
+      prop:なまえ "にちへん"@ja ;
+      prop:なまえ "ひへん"@ja ;
+      prop:よみ "ひ"@ja ;
+      prop:かたち [ rdf:value res:U53E3, dic:U30FC ] ;
+      .
+
+<http://example.org/katati/resource/U+706B>
+      prop:Unicode "U+706B"@ja ;
+      prop:つくり "火"@ja ;
+      prop:なまえ "ひへん"@ja ;
+      prop:なまえ "ひ"@ja ;
+      prop:よみ "ひ"@ja ;
+      prop:かたち [ rdf:value res:U4EBA, res:U4E36, res:U4E36 ] ;
+      .
+
+<http://example.org/katati/resource/U+65B9>
+      prop:Unicode "U+65B9"@ja ;
+      prop:つくり "方"@ja ;
+      prop:なまえ "かたへん"@ja ;
+      prop:なまえ "ほうへん"@ja ;
+      prop:よみ "かた"@ja ;
+      prop:かたち [ rdf:value res:U4EA0, dic:U30CE, dic:U0037 ] ;
+      .
+
+<http://example.org/katati/resource/U+6B79>
+      prop:Unicode "U+6B79"@ja ;
+      prop:つくり "歹"@ja ;
+      prop:なまえ "がつへん"@ja ;
+      prop:なまえ "かばねへん"@ja ;
+      prop:なまえ "いちたへん"@ja ;
+      prop:かたち [ rdf:value dic:U30FC, res:U5915 ] ;
+      .
+
+<http://example.org/katati/resource/U+725B>
+      prop:Unicode "U+725B"@ja ;
+      prop:つくり "牛"@ja ;
+      prop:なまえ "うしへん"@ja ;
+      prop:なまえ "うし"@ja ;
+      prop:かたち [ rdf:value dic:U30CE, dic:U30FC, dic:U30FC, dic:UFF5C ] ;
+      .
+
+<http://example.org/katati/resource/U+7247>
+      prop:Unicode "U+7247"@ja ;
+      prop:つくり "片"@ja ;
+      prop:なまえ "かたへん"@ja ;
+      prop:なまえ "かた"@ja ;
+      prop:よみ "かた"@ja ;
+      .
+
+<http://example.org/katati/resource/U+723F>
+      prop:Unicode "U+723F"@ja ;
+      prop:つくり "爿"@ja ;
+      prop:なまえ "しょうへん"@ja ;
+      prop:かたち [ rdf:value dic:U30EC, dic:UFF5C, dic:U30FC, dic:U30CE ] ;
+      .
+
+<http://example.org/katati/resource/U+79BE>
+      prop:Unicode "U+79BE"@ja ;
+      prop:つくり "禾"@ja ;
+      prop:なまえ "のぎへん"@ja ;
+      prop:なまえ "のぎ"@ja ;
+      prop:よみ "のぎ"@ja ;
+      prop:かたち [ rdf:value dic:U30CE, res:U6728 ] ;
+      .
+
+<http://example.org/katati/resource/U+77F3>
+      prop:Unicode "U+77F3"@ja ;
+      prop:つくり "石"@ja ;
+      prop:なまえ "いしへん"@ja ;
+      prop:なまえ "いし"@ja ;
+      prop:よみ "いし"@ja ;
+      prop:かたち [ rdf:value dic:U30FC, dic:U30CE, res:U53E3 ] ;
+      .
+
+<http://example.org/katati/resource/U+793B>
+      prop:Unicode "U+793B"@ja ;
+      prop:つくり "礻"@ja ;
+      prop:なまえ "しめすへん"@ja ;
+      prop:なまえ "ねへん"@ja ;
+      prop:かたち [ rdf:value dic:U30CD ] ;
+      prop:かたち [ rdf:value res:U793A ] ;
+      .
+
+<http://example.org/katati/resource/U+738B>
+      prop:Unicode "U+738B"@ja ;
+      prop:つくり "王"@ja ;
+      prop:なまえ "たまへん"@ja ;
+      prop:なまえ "おうへん"@ja ;
+      prop:よみ "おう"@ja ;
+      prop:かたち [ rdf:value dic:U30FC, dic:U30FC, dic:U30FC, dic:UFF5C ] ;
+      .
+
+<http://example.org/katati/resource/U+8864>
+      prop:Unicode "U+8864"@ja ;
+      prop:つくり "衤"@ja ;
+      prop:なまえ "ころもへん"@ja ;
+      prop:かたち [ rdf:value dic:U30CD, res:U4E36 ] ;
+      prop:かたち [ rdf:value res:U793B, res:U4E36 ] ;
+      .
+
+<http://example.org/katati/resource/U+76EE>
+      prop:Unicode "U+76EE"@ja ;
+      prop:つくり "目"@ja ;
+      prop:なまえ "めへん"@ja ;
+      prop:なまえ "め"@ja ;
+      prop:よみ "め"@ja ;
+      prop:かたち [ rdf:value res:U65E5, dic:U30FC ] ;
+      .
+
+<http://example.org/katati/resource/U+7530>
+      prop:Unicode "U+7530"@ja ;
+      prop:つくり "田"@ja ;
+      prop:なまえ "たへん"@ja ;
+      prop:なまえ "た"@ja ;
+      prop:よみ "た"@ja ;
+      prop:かたち [ rdf:value res:U65E5, dic:UFF5C ] ;
+      prop:かたち [ rdf:value res:U53E3, dic:UFF0B ] ;
+      .
+
+<http://example.org/katati/resource/U+77E2>
+      prop:Unicode "U+77E2"@ja ;
+      prop:つくり "矢"@ja ;
+      prop:なまえ "やへん"@ja ;
+      prop:なまえ "た"@ja ;
+      prop:よみ "や"@ja ;
+      prop:かたち [ rdf:value dic:U30CE, dic:U30FC, dic:U30FC, res:U4EBA ] ;
+      .
+
+<http://example.org/katati/resource/U+7ACB>
+      prop:Unicode "U+7ACB"@ja ;
+      prop:つくり "立"@ja ;
+      prop:なまえ "たつへん"@ja ;
+      prop:なまえ "たつ"@ja ;
+      prop:よみ "たつ"@ja ;
+      prop:かたち [ rdf:value res:U4EA0, dic:UFF5C, dic:UFF5C, dic:U30FC ] ;
+      .
+
+<http://example.org/katati/resource/U+767D>
+      prop:Unicode "U+767D"@ja ;
+      prop:つくり "白"@ja ;
+      prop:なまえ "しろへん"@ja ;
+      prop:なまえ "しろ"@ja ;
+      prop:よみ "しろ"@ja ;
+      prop:かたち [ rdf:value res:U65E5, res:U4E36 ] ;
+      .
+
+<http://example.org/katati/resource/U+6534>
+      prop:Unicode "U+6534"@ja ;
+      prop:つくり "攴"@ja ;
+      prop:なまえ "ほこへん"@ja ;
+      prop:なまえ "ほこ"@ja ;
+      prop:かたち [ rdf:value res:U53C8, dic:U30C8 ] ;
+      prop:かたち [ rdf:value res:U652F ] ;
+      .
+
+<http://example.org/katati/resource/U+7CF8>
+      prop:Unicode "U+7CF8"@ja ;
+      prop:つくり "糸"@ja ;
+      prop:なまえ "いとへん"@ja ;
+      prop:なまえ "いと"@ja ;
+      prop:よみ "いと"@ja ;
+      prop:かたち [ rdf:value dic:U304F, dic:U30E0, res:U5C0F ] ;
+      .
+
+<http://example.org/katati/resource/U+7C73>
+      prop:Unicode "U+7C73"@ja ;
+      prop:つくり "米"@ja ;
+      prop:なまえ "こめへん"@ja ;
+      prop:なまえ "こめ"@ja ;
+      prop:よみ "こめ"@ja ;
+      prop:かたち [ rdf:value dic:U203B ] ;
+      prop:かたち [ rdf:value res:U6728, res:U4E36, res:U4E36 ] ;
+      .
+
+<http://example.org/katati/resource/U+821F>
+      prop:Unicode "U+821F"@ja ;
+      prop:つくり "舟"@ja ;
+      prop:なまえ "ふねへん"@ja ;
+      prop:なまえ "ふね"@ja ;
+      prop:よみ "ふね"@ja ;
+      .
+
+<http://example.org/katati/resource/U+866B>
+      prop:Unicode "U+866B"@ja ;
+      prop:つくり "虫"@ja ;
+      prop:なまえ "む乚へん"@ja ;
+      prop:なまえ "む乚"@ja ;
+      prop:よみ "むし"@ja ;
+      prop:かたち [ rdf:value res:U4E2D, dic:U30FC, res:U4E36 ] ;
+      .
+
+<http://example.org/katati/resource/U+8033>
+      prop:Unicode "U+8033"@ja ;
+      prop:つくり "耳"@ja ;
+      prop:なまえ "みみへん"@ja ;
+      prop:なまえ "みみ"@ja ;
+      prop:よみ "みみ"@ja ;
+      .
+
+<http://example.org/katati/resource/U+8012>
+      prop:Unicode "U+8012"@ja ;
+      prop:つくり "耒"@ja ;
+      prop:なまえ "すきへん"@ja ;
+      prop:かたち [ rdf:value dic:U30CE, res:U672A ] ;
+      .
+
+<http://example.org/katati/resource/U+52F9>
+      prop:Unicode "U+52F9"@ja ;
+      prop:つくり "勹"@ja ;
+      prop:なまえ "つつみがまえ"@ja ;
+      prop:かたち [ rdf:value dic:U30AF ] ;
+      prop:かたち [ rdf:value dic:U30CE, dic:U0037 ] ;
+      .
+
+<http://example.org/katati/resource/U+81F3>
+      prop:Unicode "U+81F3"@ja ;
+      prop:つくり "至"@ja ;
+      prop:なまえ "いたるへん"@ja ;
+      prop:よみ "いたる"@ja ;
+      prop:かたち [ rdf:value dic:U30FC, dic:U30E0, res:U571F ] ;
+      .
+
+<http://example.org/katati/resource/U+7F36>
+      prop:Unicode "U+7F36"@ja ;
+      prop:つくり "缶"@ja ;
+      prop:なまえ "ほとぎへん"@ja ;
+      prop:なまえ "かん"@ja ;
+      prop:よみ "かん"@ja ;
+      prop:かたち [ rdf:value dic:U30CE, dic:U30FC, dic:U30FC, res:U5C71 ] ;
+      .
+
+<http://example.org/katati/resource/U+820C>
+      prop:Unicode "U+820C"@ja ;
+      prop:つくり "舌"@ja ;
+      prop:なまえ "したへん"@ja ;
+      prop:なまえ "した"@ja ;
+      prop:よみ "した"@ja ;
+      prop:かたち [ rdf:value dic:U30CE, res:U53E4 ] ;
+      prop:かたち [ rdf:value dic:U30CE, dic:UFF5C, dic:U30FC, res:U53E3 ] ;
+      .
+
+<http://example.org/katati/resource/U+8840>
+      prop:Unicode "U+8840"@ja ;
+      prop:つくり "血"@ja ;
+      prop:なまえ "ちへん"@ja ;
+      prop:なまえ "ち"@ja ;
+      prop:よみ "ち"@ja ;
+      prop:かたち [ rdf:value res:U76BF, res:U4E36 ] ;
+      .
+
+<http://example.org/katati/resource/U+8A00>
+      prop:Unicode "U+8A00"@ja ;
+      prop:つくり "言"@ja ;
+      prop:なまえ "ごんべん"@ja ;
+      prop:よみ "いう"@ja ;
+      prop:かたち [ rdf:value res:U4E36, dic:U30FC, dic:U30FC, dic:U30FC, res:U53E3 ] ;
+      .
+
+<http://example.org/katati/resource/U+9149>
+      prop:Unicode "U+9149"@ja ;
+      prop:つくり "酉"@ja ;
+      prop:なまえ "とりへん"@ja ;
+      prop:なまえ "ひよみのとり"@ja ;
+      prop:なまえ "さけのとり"@ja ;
+      prop:よみ "とり"@ja ;
+      prop:かたち [ rdf:value res:U897F, dic:U30FC ] ;
+      .
+
+<http://example.org/katati/resource/U+8DB3>
+      prop:Unicode "U+8DB3"@ja ;
+      prop:つくり "足"@ja ;
+      prop:なまえ "あしへん"@ja ;
+      prop:なまえ "あし"@ja ;
+      prop:よみ "あし"@ja ;
+      prop:かたち [ rdf:value res:U53E3, dic:U30C8, dic:U30CE, res:U4E40 ] ;
+      .
+
+<http://example.org/katati/resource/U+8ECA>
+      prop:Unicode "U+8ECA"@ja ;
+      prop:つくり "車"@ja ;
+      prop:なまえ "くるまへん"@ja ;
+      prop:なまえ "くるま"@ja ;
+      prop:よみ "くるま"@ja ;
+      prop:かたち [ rdf:value dic:U30FC, dic:U30FC, res:U65E5, dic:UFF5C ] ;
+      .
+
+<http://example.org/katati/resource/U+89D2>
+      prop:Unicode "U+89D2"@ja ;
+      prop:つくり "角"@ja ;
+      prop:なまえ "つのへん"@ja ;
+      prop:なまえ "かくへん"@ja ;
+      prop:よみ "つの"@ja ;
+      .
+
+<http://example.org/katati/resource/U+91C6>
+      prop:Unicode "U+91C6"@ja ;
+      prop:つくり "釆"@ja ;
+      prop:なまえ "のごめへん"@ja ;
+      prop:かたち [ rdf:value dic:U30CE, res:U7C73 ] ;
+      .
+
+<http://example.org/katati/resource/U+8C78>
+      prop:Unicode "U+8C78"@ja ;
+      prop:つくり "豸"@ja ;
+      prop:なまえ "むじなへん"@ja ;
+      prop:かたち [ rdf:value dic:U30CE, dic:U30C4, dic:U30CE, dic:U30CE, dic:UFF5C ] ;
+      .
+
+<http://example.org/katati/resource/U+8EAB>
+      prop:Unicode "U+8EAB"@ja ;
+      prop:つくり "身"@ja ;
+      prop:なまえ "みへん"@ja ;
+      prop:なまえ "み"@ja ;
+      prop:よみ "み"@ja ;
+      .
+
+<http://example.org/katati/resource/U+91CC>
+      prop:Unicode "U+91CC"@ja ;
+      prop:つくり "里"@ja ;
+      prop:なまえ "さとへん"@ja ;
+      prop:なまえ "さと"@ja ;
+      prop:よみ "さと"@ja ;
+      prop:かたち [ rdf:value res:U7530, res:U571F ] ;
+      prop:かたち [ rdf:value res:U65E5, res:U571F ] ;
+      .
+
+<http://example.org/katati/resource/U+8D64>
+      prop:Unicode "U+8D64"@ja ;
+      prop:つくり "赤"@ja ;
+      prop:なまえ "あかへん"@ja ;
+      prop:なまえ "あか"@ja ;
+      prop:よみ "あか"@ja ;
+      prop:かたち [ rdf:value res:U571F, res:U4EA6 ] ;
+      prop:かたち [ rdf:value res:U571F, res:U5C0F, dic:U30CE ] ;
+      .
+
+<http://example.org/katati/resource/U+8C46>
+      prop:Unicode "U+8C46"@ja ;
+      prop:つくり "豆"@ja ;
+      prop:なまえ "まめへん"@ja ;
+      prop:なまえ "まめ"@ja ;
+      prop:よみ "まめ"@ja ;
+      prop:かたち [ rdf:value dic:U30FC, res:U53E3, res:U4E36, res:U4E36, dic:U30FC ] ;
+      .
+
+<http://example.org/katati/resource/U+8C37>
+      prop:Unicode "U+8C37"@ja ;
+      prop:つくり "谷"@ja ;
+      prop:なまえ "たにへん"@ja ;
+      prop:なまえ "たに"@ja ;
+      prop:よみ "たに"@ja ;
+      prop:かたち [ rdf:value res:U516B, res:U516B, res:U53E3 ] ;
+      prop:かたち [ rdf:value res:U4E36, res:U4E36, res:U4EBA, res:U53E3 ] ;
+      prop:かたち [ rdf:value res:U516B, res:U4EBA, res:U53E3 ] ;
+      .
+
+<http://example.org/katati/resource/U+8FB0>
+      prop:Unicode "U+8FB0"@ja ;
+      prop:つくり "辰"@ja ;
+      prop:なまえ "しん"@ja ;
+      prop:よみ "しん"@ja ;
+      prop:よみ "たつ"@ja ;
+      .
+
+<http://example.org/katati/resource/U+8C55>
+      prop:Unicode "U+8C55"@ja ;
+      prop:つくり "豕"@ja ;
+      prop:なまえ "いのこへん"@ja ;
+      prop:かたち [ rdf:value dic:U30FC, dic:U30CE, dic:U30CE, dic:U30CE, res:U4E36, res:U4E40, dic:UFF5C ] ;
+      .
+
+<http://example.org/katati/resource/U+91D1>
+      prop:Unicode "U+91D1"@ja ;
+      prop:つくり "金"@ja ;
+      prop:なまえ "かねへん"@ja ;
+      prop:よみ "かね"@ja ;
+      prop:よみ "きん"@ja ;
+      .
+
+<http://example.org/katati/resource/U+98DF>
+      prop:Unicode "U+98DF"@ja ;
+      prop:つくり "食"@ja ;
+      prop:なまえ "しょくへん"@ja ;
+      prop:よみ "しょく"@ja ;
+      prop:よみ "たべる"@ja ;
+      prop:かたち [ rdf:value res:U4EBA, res:U826F ] ;
+      .
+
+<http://example.org/katati/resource/U+9752>
+      prop:Unicode "U+9752"@ja ;
+      prop:つくり "青"@ja ;
+      prop:なまえ "あおへん"@ja ;
+      prop:よみ "あお"@ja ;
+      prop:かたち [ rdf:value res:U6708, dic:U30FC, dic:U30FC, dic:U30FC, dic:UFF5C ] ;
+      .
+
+<http://example.org/katati/resource/U+9577>
+      prop:Unicode "U+9577"@ja ;
+      prop:つくり "長"@ja ;
+      prop:なまえ "ながい"@ja ;
+      prop:よみ "ながい"@ja ;
+      prop:かたち [ rdf:value dic:U30FC, dic:UFF5C, dic:U30FC, dic:U30FC, dic:U30FC, dic:U30EC, res:U4E36, res:U4E40 ] ;
+      prop:かたち [ rdf:value res:U9578 ] ;
+      .
+
+<http://example.org/katati/resource/U+9769>
+      prop:Unicode "U+9769"@ja ;
+      prop:つくり "革"@ja ;
+      prop:なまえ "かわへん"@ja ;
+      prop:よみ "かわ"@ja ;
+      .
+
+<http://example.org/katati/resource/U+9762>
+      prop:Unicode "U+9762"@ja ;
+      prop:つくり "面"@ja ;
+      prop:なまえ "めん"@ja ;
+      prop:なまえ "おもて"@ja ;
+      prop:よみ "めん"@ja ;
+      prop:よみ "おもて"@ja ;
+      prop:かたち [ rdf:value dic:U30FC, res:U53E3, dic:UFF5C, dic:UFF5C, dic:U30FC, dic:U30FC ] ;
+      .
+
+<http://example.org/katati/resource/U+9996>
+      prop:Unicode "U+9996"@ja ;
+      prop:つくり "首"@ja ;
+      prop:なまえ "くび"@ja ;
+      prop:よみ "くび"@ja ;
+      prop:かたち [ rdf:value res:U4E36, res:U4E36, dic:U30FC, res:U81EA ] ;
+      prop:かたち [ rdf:value res:U4E36, res:U4E36, dic:U30FC, res:U76EE, res:U4E36 ] ;
+      .
+
+<http://example.org/katati/resource/U+9999>
+      prop:Unicode "U+9999"@ja ;
+      prop:つくり "香"@ja ;
+      prop:なまえ "かおり"@ja ;
+      prop:よみ "かおり"@ja ;
+      prop:かたち [ rdf:value dic:U30CE, res:U6728, res:U65E5 ] ;
+      .
+
+<http://example.org/katati/resource/U+99AC>
+      prop:Unicode "U+99AC"@ja ;
+      prop:つくり "馬"@ja ;
+      prop:なまえ "うまへん"@ja ;
+      prop:よみ "うま"@ja ;
+      .
+
+<http://example.org/katati/resource/U+9AA8>
+      prop:Unicode "U+9AA8"@ja ;
+      prop:つくり "骨"@ja ;
+      prop:なまえ "ほねへん"@ja ;
+      prop:なまえ "こつへん"@ja ;
+      prop:よみ "ほね"@ja ;
+      .
+
+<http://example.org/katati/resource/U+9B5A>
+      prop:Unicode "U+9B5A"@ja ;
+      prop:つくり "魚"@ja ;
+      prop:なまえ "うおへん"@ja ;
+      prop:なまえ "さかねへん"@ja ;
+      prop:よみ "さかな"@ja ;
+      prop:かたち [ rdf:value dic:U30AF, res:U7530, res:U4E36U4E36U4E36U4E36 ] ;
+      .
+
+<http://example.org/katati/resource/U+9E75>
+      prop:Unicode "U+9E75"@ja ;
+      prop:つくり "鹵"@ja ;
+      prop:なまえ "しおへん"@ja ;
+      prop:かたち [ rdf:value res:U5360, res:U5FC5 ] ;
+      prop:かたち [ rdf:value res:U5360, res:U7C73 ] ;
+      .
+
+<http://example.org/katati/resource/U+9E7F>
+      prop:Unicode "U+9E7F"@ja ;
+      prop:つくり "鹿"@ja ;
+      prop:なまえ "しかへん"@ja ;
+      prop:よみ "しか"@ja ;
+      prop:かたち [ rdf:value res:U5E7F, res:U6BD4, dic:U30B3, dic:UFF5C, dic:UFF5C ] ;
+      .
+
+<http://example.org/katati/resource/U+9EA6>
+      prop:Unicode "U+9EA6"@ja ;
+      prop:つくり "麦"@ja ;
+      prop:なまえ "むぎへん"@ja ;
+      prop:よみ "むぎ"@ja ;
+      prop:かたち [ rdf:value res:U9FB6, res:U4E45 ] ;
+      prop:かたち [ rdf:value res:U9FB6, dic:U30AF, res:U4E40 ] ;
+      .
+
+<http://example.org/katati/resource/U+5C71>
+      prop:Unicode "U+5C71"@ja ;
+      prop:つくり "山"@ja ;
+      prop:なまえ "やまへん"@ja ;
+      prop:なまえ "やま"@ja ;
+      prop:なまえ "やまかんむり"@ja ;
+      prop:よみ "やま"@ja ;
+      prop:かたち [ rdf:value dic:UFF5C, dic:UFF5C, dic:UFF5C, dic:U30FC ] ;
+      .
+
+<http://example.org/katati/resource/U+9ED2>
+      prop:Unicode "U+9ED2"@ja ;
+      prop:つくり "黒"@ja ;
+      prop:なまえ "くろへん"@ja ;
+      prop:よみ "くろ"@ja ;
+      .
+
+<http://example.org/katati/resource/U+9EFD>
+      prop:Unicode "U+9EFD"@ja ;
+      prop:つくり "黽"@ja ;
+      prop:なまえ "ふつへん"@ja ;
+      prop:かたち [ rdf:value res:U53E3, res:U53E3, res:U65E5, res:U65E5, dic:UFF5C, res:L ] ;
+      .
+
+<http://example.org/katati/resource/U+9ECD>
+      prop:Unicode "U+9ECD"@ja ;
+      prop:つくり "黍"@ja ;
+      prop:なまえ "きび"@ja ;
+      prop:かたち [ rdf:value dic:U30CE, res:U6728, res:U4EBA, dic:UFF5C, dic:U30F3, res:U4E36, res:U4E36 ] ;
+      prop:かたち [ rdf:value dic:U30CE, res:U6728, res:U6C3A ] ;
+      .
+
+<http://example.org/katati/resource/U+9EC4>
+      prop:Unicode "U+9EC4"@ja ;
+      prop:つくり "黄"@ja ;
+      prop:なまえ "きいろ"@ja ;
+      prop:なまえ "き"@ja ;
+      prop:かたち [ rdf:value dic:U30FC, dic:U30FC, dic:UFF5C, dic:UFF5C, res:U65E5, dic:UFF5C, res:U516B ] ;
+      .
+
+<http://example.org/katati/resource/U+9F0E>
+      prop:Unicode "U+9F0E"@ja ;
+      prop:つくり "鼎"@ja ;
+      prop:なまえ "かなえ"@ja ;
+      prop:よみ "てい"@ja ;
+      prop:かたち [ rdf:value res:U76EE, res:L, dic:UFF5C, dic:U30FC, dic:U30CE ] ;
+      .
+
+<http://example.org/katati/resource/U+9F3B>
+      prop:Unicode "U+9F3B"@ja ;
+      prop:つくり "鼻"@ja ;
+      prop:なまえ "はなへん"@ja ;
+      prop:よみ "はな"@ja ;
+      prop:かたち [ rdf:value res:U81EA, res:U7530, dic:U30FC, dic:U30CE, dic:UFF5C ] ;
+      .
+
+<http://example.org/katati/resource/U+6B6F>
+      prop:Unicode "U+6B6F"@ja ;
+      prop:つくり "歯"@ja ;
+      prop:なまえ "はへん"@ja ;
+      prop:よみ "は"@ja ;
+      prop:かたち [ rdf:value res:U6B62, res:U7C73, res:U53E3 ] ;
+      .
+
+<http://example.org/katati/resource/U+9FA0>
+      prop:Unicode "U+9FA0"@ja ;
+      prop:つくり "龠"@ja ;
+      prop:なまえ "やく"@ja ;
+      prop:よみ "やく"@ja ;
+      prop:かたち [ rdf:value res:U4EBA, dic:U30FC, res:U53E3, res:U53E3, res:U53E3, res:U518A ] ;
+      .
+
+<http://example.org/katati/resource/U+4E5A>
+      prop:Unicode "U+4E5A"@ja ;
+      prop:つくり "乚"@ja ;
+      prop:なまえ "おつにょう"@ja ;
+      prop:なまえ "つりばり"@ja ;
+      prop:かたち [ rdf:value dic:U30EC ] ;
+      .
+
+<http://example.org/katati/resource/U+5202>
+      prop:Unicode "U+5202"@ja ;
+      prop:つくり "刂"@ja ;
+      prop:なまえ "りっとう"@ja ;
+      prop:かたち [ rdf:value dic:U30EA ] ;
+      prop:かたち [ rdf:value dic:UFF5C, dic:UFF5C ] ;
+      .
+
+<http://example.org/katati/resource/U+529B>
+      prop:Unicode "U+529B"@ja ;
+      prop:つくり "力"@ja ;
+      prop:なまえ "ちから"@ja ;
+      prop:よみ "ちから"@ja ;
+      prop:かたち [ rdf:value dic:U30AB ] ;
+      .
+
+<http://example.org/katati/resource/U+53C8>
+      prop:Unicode "U+53C8"@ja ;
+      prop:つくり "又"@ja ;
+      prop:なまえ "また"@ja ;
+      prop:よみ "また"@ja ;
+      prop:かたち [ rdf:value dic:U30FC, dic:U30E1 ] ;
+      prop:かたち [ rdf:value dic:U30D5, res:U4E40 ] ;
+      prop:かたち [ rdf:value dic:U30CC ] ;
+      .
+
+<http://example.org/katati/resource/U+5369>
+      prop:Unicode "U+5369"@ja ;
+      prop:つくり "卩"@ja ;
+      prop:なまえ "ふしづくり"@ja ;
+      prop:かたち [ rdf:value dic:U0050 ] ;
+      .
+
+<http://example.org/katati/resource/U+5F61>
+      prop:Unicode "U+5F61"@ja ;
+      prop:つくり "彡"@ja ;
+      prop:なまえ "さんづくり"@ja ;
+      prop:かたち [ rdf:value dic:U30DF ] ;
+      prop:かたち [ rdf:value dic:U30CE, dic:U30CE, dic:U30CE ] ;
+      prop:かたち [ rdf:value res:U4E09 ] ;
+      .
+
+<http://example.org/katati/resource/U+5BF8>
+      prop:Unicode "U+5BF8"@ja ;
+      prop:つくり "寸"@ja ;
+      prop:なまえ "すんずくり"@ja ;
+      prop:よみ "すん"@ja ;
+      prop:かたち [ rdf:value dic:U30FC, dic:UFF5C, res:U4E36 ] ;
+      .
+
+<http://example.org/katati/resource/U+6535>
+      prop:Unicode "U+6535"@ja ;
+      prop:つくり "攵"@ja ;
+      prop:なまえ "ぼくづくり"@ja ;
+      prop:なまえ "のぶん"@ja ;
+      prop:かたち [ rdf:value dic:U30B1, res:U4E40 ] ;
+      prop:かたち [ rdf:value dic:U30CE, dic:U30FC, dic:U30E1 ] ;
+      .
+
+<http://example.org/katati/resource/U+6B20>
+      prop:Unicode "U+6B20"@ja ;
+      prop:つくり "欠"@ja ;
+      prop:なまえ "あくび"@ja ;
+      prop:よみ "けつ"@ja ;
+      prop:かたち [ rdf:value dic:U30CE, dic:U30D5, res:U4EBA ] ;
+      .
+
+<http://example.org/katati/resource/U+6BB3>
+      prop:Unicode "U+6BB3"@ja ;
+      prop:つくり "殳"@ja ;
+      prop:なまえ "るまた"@ja ;
+      prop:なまえ "ほこづくり"@ja ;
+      prop:かたち [ rdf:value dic:U30EB, res:U53C8 ] ;
+      prop:かたち [ rdf:value dic:U30EB, dic:U30FC, res:U53C8 ] ;
+      prop:かたち [ rdf:value res:U51E0, res:U53C8 ] ;
+      .
+
+<http://example.org/katati/resource/U+6597>
+      prop:Unicode "U+6597"@ja ;
+      prop:つくり "斗"@ja ;
+      prop:なまえ "とます"@ja ;
+      prop:よみ "と"@ja ;
+      prop:かたち [ rdf:value res:U5341, res:U4E36, res:U4E36 ] ;
+      .
+
+<http://example.org/katati/resource/U+65A4>
+      prop:Unicode "U+65A4"@ja ;
+      prop:つくり "斤"@ja ;
+      prop:なまえ "おのづくり"@ja ;
+      prop:よみ "きん"@ja ;
+      prop:かたち [ rdf:value dic:U30CE, dic:U30CE, dic:U30FC, dic:UFF5C ] ;
+      .
+
+<http://example.org/katati/resource/U+72AC>
+      prop:Unicode "U+72AC"@ja ;
+      prop:つくり "犬"@ja ;
+      prop:なまえ "いぬ"@ja ;
+      prop:よみ "いぬ"@ja ;
+      prop:かたち [ rdf:value res:U5927, res:U4E36 ] ;
+      .
+
+<http://example.org/katati/resource/U+6208>
+      prop:Unicode "U+6208"@ja ;
+      prop:つくり "戈"@ja ;
+      prop:なまえ "ほこづくり"@ja ;
+      prop:なまえ "ほこがまえ"@ja ;
+      prop:よみ "ほこ"@ja ;
+      prop:かたち [ rdf:value res:U5F0B, dic:U30CE ] ;
+      .
+
+<http://example.org/katati/resource/U+807F>
+      prop:Unicode "U+807F"@ja ;
+      prop:つくり "聿"@ja ;
+      prop:なまえ "ふでづくり"@ja ;
+      prop:かたち [ rdf:value dic:U30B3, dic:U30FC, dic:U30FC, dic:U30FC, dic:UFF5C ] ;
+      .
+
+<http://example.org/katati/resource/U+826E>
+      prop:Unicode "U+826E"@ja ;
+      prop:つくり "艮"@ja ;
+      prop:なまえ "うしとら"@ja ;
+      prop:なまえ "こんづくり"@ja ;
+      prop:なまえ "ねづくり"@ja ;
+      prop:かたち [ rdf:value res:U65E5, dic:U30EC, res:U4E36, res:U4E40 ] ;
+      prop:かたち [ rdf:value res:U65E5, dic:UFF5C, res:U4E36, res:U4E40 ] ;
+      .
+
+<http://example.org/katati/resource/U+74DC>
+      prop:Unicode "U+74DC"@ja ;
+      prop:つくり "瓜"@ja ;
+      prop:なまえ "うり"@ja ;
+      prop:よみ "うり"@ja ;
+      prop:かたち [ rdf:value res:U722A, res:U4E36 ] ;
+      .
+
+<http://example.org/katati/resource/U+898B>
+      prop:Unicode "U+898B"@ja ;
+      prop:つくり "見"@ja ;
+      prop:なまえ "みる"@ja ;
+      prop:よみ "みる"@ja ;
+      prop:かたち [ rdf:value res:U76EE, res:U513F ] ;
+      .
+
+<http://example.org/katati/resource/U+96B9>
+      prop:Unicode "U+96B9"@ja ;
+      prop:つくり "隹"@ja ;
+      prop:なまえ "ふるとり"@ja ;
+      prop:かたち [ rdf:value dic:U30CE, res:U4E36, dic:U30FC, dic:U30FC, dic:U30FC, dic:U30FC, dic:UFF5C, dic:UFF5C ] ;
+      .
+
+<http://example.org/katati/resource/U+9801>
+      prop:Unicode "U+9801"@ja ;
+      prop:つくり "頁"@ja ;
+      prop:なまえ "おおがい"@ja ;
+      prop:よみ "ぺーじ"@ja ;
+      prop:よみ "ページ"@ja ;
+      prop:かたち [ rdf:value res:U8C9D, dic:U30FC, res:U4E36 ] ;
+      prop:かたち [ rdf:value dic:U30FC, res:U81EA, res:U4E36, res:U4E36 ] ;
+      prop:かたち [ rdf:value dic:U30FC, res:U4E36, res:U76EE, res:U516B ] ;
+      .
+
+<http://example.org/katati/resource/U+97CB>
+      prop:Unicode "U+97CB"@ja ;
+      prop:つくり "韋"@ja ;
+      prop:なまえ "なめしがわ"@ja ;
+      prop:かたち [ rdf:value dic:U30E6, dic:UFF5C, res:U53E3, dic:U30FC, dic:U30FC, dic:UFF5C, dic:UFF5C ] ;
+      .
+
+<http://example.org/katati/resource/U+4EBA>
+      prop:Unicode "U+4EBA"@ja ;
+      prop:つくり "人"@ja ;
+      prop:なまえ "ひとやね"@ja ;
+      prop:よみ "ひと"@ja ;
+      prop:かたち [ rdf:value dic:U30CE, res:U4E40 ] ;
+      .
+
+<http://example.org/katati/resource/U+5165>
+      prop:Unicode "U+5165"@ja ;
+      prop:つくり "入"@ja ;
+      prop:なまえ "いりがしら"@ja ;
+      prop:なまえ "いりやね"@ja ;
+      prop:よみ "はいる"@ja ;
+      prop:かたち [ rdf:value dic:U30CE, res:U4E40 ] ;
+      .
+
+<http://example.org/katati/resource/U+4EA0>
+      prop:Unicode "U+4EA0"@ja ;
+      prop:つくり "亠"@ja ;
+      prop:なまえ "なべぶた"@ja ;
+      prop:なまえ "けいさんかんむり"@ja ;
+      prop:よみ "とう"@ja ;
+      prop:かたち [ rdf:value dic:U30FC, res:U4E36 ] ;
+      prop:かたち [ rdf:value dic:UFF5C, dic:U30FC ] ;
+      .
+
+<http://example.org/katati/resource/U+5196>
+      prop:Unicode "U+5196"@ja ;
+      prop:つくり "冖"@ja ;
+      prop:なまえ "わかんむり"@ja ;
+      prop:なまえ "ひらかんむり"@ja ;
+      prop:かたち [ rdf:value dic:U30EF ] ;
+      .
+
+<http://example.org/katati/resource/U+6BDB>
+      prop:Unicode "U+6BDB"@ja ;
+      prop:つくり "毛"@ja ;
+      prop:なまえ "けがわ"@ja ;
+      prop:なまえ "ひのかわ"@ja ;
+      prop:なまえ "け"@ja ;
+      prop:よみ "け"@ja ;
+      prop:かたち [ rdf:value dic:U30CE, dic:U30FC, dic:U30FC, res:U4E5A ] ;
+      .
+
+<http://example.org/katati/resource/U+8279>
+      prop:Unicode "U+8279"@ja ;
+      prop:つくり "艹"@ja ;
+      prop:なまえ "くさかんむり"@ja ;
+      prop:かたち [ rdf:value dic:U30B5 ] ;
+      prop:かたち [ rdf:value dic:U30FC, res:U4E36, res:U4E36 ] ;
+      prop:かたち [ rdf:value res:U5341, res:U5341 ] ;
+      .
+
+<http://example.org/katati/resource/U+5B80>
+      prop:Unicode "U+5B80"@ja ;
+      prop:つくり "宀"@ja ;
+      prop:なまえ "うかんむり"@ja ;
+      prop:よみ "べん"@ja ;
+      prop:かたち [ rdf:value res:U5196, res:U4E36 ] ;
+      .
+
+<http://example.org/katati/resource/U+5927>
+      prop:Unicode "U+5927"@ja ;
+      prop:つくり "大"@ja ;
+      prop:なまえ "だい"@ja ;
+      prop:よみ "だい"@ja ;
+      prop:かたち [ rdf:value res:U4EBA, dic:U30FC ] ;
+      .
+
+<http://example.org/katati/resource/U+5902>
+      prop:Unicode "U+5902"@ja ;
+      prop:つくり "夂"@ja ;
+      prop:なまえ "ふゆがしら"@ja ;
+      prop:かたち [ rdf:value res:U4E45 ] ;
+      prop:かたち [ rdf:value dic:U30AF, res:U4E40 ] ;
+      prop:かたち [ rdf:value dic:U30CE, res:U53C8 ] ;
+      .
+
+<http://example.org/katati/resource/U+5F51>
+      prop:Unicode "U+5F51"@ja ;
+      prop:つくり "彑"@ja ;
+      prop:なまえ "けいがしら"@ja ;
+      prop:かたち [ rdf:value dic:U30EC, dic:U30D5, dic:U30FC ] ;
+      prop:かたち [ rdf:value dic:U30E6, dic:U30EC, dic:U30FC ] ;
+      .
+
+<http://example.org/katati/resource/U+8002>
+      prop:Unicode "U+8002"@ja ;
+      prop:つくり "耂"@ja ;
+      prop:なまえ "おいかんむり"@ja ;
+      prop:なまえ "おいがしら"@ja ;
+      prop:かたち [ rdf:value res:U571F, dic:U30CE ] ;
+      .
+
+<http://example.org/katati/resource/U+722A>
+      prop:Unicode "U+722A"@ja ;
+      prop:つくり "爪"@ja ;
+      prop:なまえ "つめかんむり"@ja ;
+      prop:なまえ "そうにょう"@ja ;
+      prop:よみ "つめ"@ja ;
+      prop:かたち [ rdf:value dic:U30CE, dic:U30CE, dic:UFF5C, res:U4E40 ] ;
+      prop:かたち [ rdf:value dic:U30FC, dic:U30CE, dic:UFF5C, res:U4E40 ] ;
+      .
+
+<http://example.org/katati/resource/U+6238>
+      prop:Unicode "U+6238"@ja ;
+      prop:つくり "戸"@ja ;
+      prop:なまえ "とかんむり"@ja ;
+      prop:なまえ "とだれ"@ja ;
+      prop:よみ "と"@ja ;
+      prop:よみ "へ"@ja ;
+      prop:かたち [ rdf:value dic:U30FC, res:U5C38 ] ;
+      prop:かたち [ rdf:value dic:U30CE, res:U5C38 ] ;
+      prop:かたち [ rdf:value res:U4E36, res:U5C38 ] ;
+      .
+
+<http://example.org/katati/resource/U+7A74>
+      prop:Unicode "U+7A74"@ja ;
+      prop:つくり "穴"@ja ;
+      prop:なまえ "あなかんむり"@ja ;
+      prop:よみ "あな"@ja ;
+      prop:かたち [ rdf:value res:U5B80, res:U516B ] ;
+      .
+
+<http://example.org/katati/resource/U+7F52>
+      prop:Unicode "U+7F52"@ja ;
+      prop:つくり "罒"@ja ;
+      prop:なまえ "あみがしら"@ja ;
+      prop:かたち [ rdf:value res:U56DB ] ;
+      prop:かたち [ rdf:value res:U76BF ] ;
+      .
+
+<http://example.org/katati/resource/U+7676>
+      prop:Unicode "U+7676"@ja ;
+      prop:つくり "癶"@ja ;
+      prop:なまえ "はつがしら"@ja ;
+      prop:かたち [ rdf:value dic:U30D5, res:U4E36, res:U4E40, res:U4E36, res:U4E36 ] ;
+      prop:かたち [ rdf:value res:ヲ, res:U4E40, res:U4E36, res:U4E36 ] ;
+      .
+
+<http://example.org/katati/resource/U+2EAE>
+      prop:Unicode "U+2EAE"@ja ;
+      prop:つくり "⺮"@ja ;
+      prop:なまえ "たけかんむり"@ja ;
+      prop:よみ "たけ"@ja ;
+      prop:かたち [ rdf:value dic:U30B1, dic:U30B1 ] ;
+      .
+
+<http://example.org/katati/resource/U+8980>
+      prop:Unicode "U+8980"@ja ;
+      prop:つくり "覀"@ja ;
+      prop:なまえ "おおいかんむり"@ja ;
+      prop:かたち [ rdf:value res:U897F ] ;
+      prop:かたち [ rdf:value dic:U30FC, res:U53E3, dic:U30EB ] ;
+      prop:かたち [ rdf:value dic:U30FC, res:U53E3, dic:UFF5C, dic:UFF5C ] ;
+      .
+
+<http://example.org/katati/resource/U+864D>
+      prop:Unicode "U+864D"@ja ;
+      prop:つくり "虍"@ja ;
+      prop:なまえ "とらかんむり"@ja ;
+      prop:なまえ "とらがしら"@ja ;
+      prop:なまえ "とら"@ja ;
+      prop:かたち [ rdf:value dic:U30C8, dic:U30D5, dic:U30CE, res:U4E03 ] ;
+      prop:かたち [ rdf:value dic:U30C8, dic:U30FC, dic:U30CE, res:U4E03 ] ;
+      .
+
+<http://example.org/katati/resource/U+2ED7>
+      prop:Unicode "U+2ED7"@ja ;
+      prop:つくり "⻗"@ja ;
+      prop:なまえ "あめかんむり"@ja ;
+      prop:よみ "あめ"@ja ;
+      prop:かたち [ rdf:value dic:U30FC, res:U4E36, dic:U30D5, res:U4E36, res:U4E36, res:U4E36, res:U4E36 ] ;
+      prop:かたち [ rdf:value res:U5196, dic:U0054, res:U4E36, res:U4E36, res:U4E36, res:U4E36 ] ;
+      .
+
+<http://example.org/katati/resource/U+9ADF>
+      prop:Unicode "U+9ADF"@ja ;
+      prop:つくり "髟"@ja ;
+      prop:なまえ "かみがしら"@ja ;
+      prop:なまえ "かみかんむり"@ja ;
+      prop:かたち [ rdf:value res:U5F61, res:U9578 ] ;
+      .
+
+<http://example.org/katati/resource/U+9EBB>
+      prop:Unicode "U+9EBB"@ja ;
+      prop:つくり "麻"@ja ;
+      prop:なまえ "あさかんむり"@ja ;
+      prop:よみ "あさ"@ja ;
+      prop:かたち [ rdf:value res:U6728, res:U6728, res:U5E7F ] ;
+      .
+
+<http://example.org/katati/resource/U+9F13>
+      prop:Unicode "U+9F13"@ja ;
+      prop:つくり "鼓"@ja ;
+      prop:なまえ "つづみ"@ja ;
+      prop:かたち [ rdf:value res:U5341, res:U8C46, dic:U30C8, res:U53C8 ] ;
+      prop:かたち [ rdf:value res:U5341, res:U8C46, dic:U30C8, dic:U30D5, res:U4E40 ] ;
+      .
+
+<http://example.org/katati/resource/U+513F>
+      prop:Unicode "U+513F"@ja ;
+      prop:つくり "儿"@ja ;
+      prop:なまえ "にんにょう"@ja ;
+      prop:なまえ "ひとあし"@ja ;
+      prop:かたち [ rdf:value dic:U30EB ] ;
+      prop:かたち [ rdf:value dic:U30CE, res:U4E5A ] ;
+      .
+
+<http://example.org/katati/resource/U+74E6>
+      prop:Unicode "U+74E6"@ja ;
+      prop:つくり "瓦"@ja ;
+      prop:なまえ "かわら"@ja ;
+      prop:よみ "かわら"@ja ;
+      prop:かたち [ rdf:value dic:U30FC, dic:U30EC, dic:U30FC, res:U4E5A, res:U4E36 ] ;
+      .
+
+<http://example.org/katati/resource/U+5EFE>
+      prop:Unicode "U+5EFE"@ja ;
+      prop:つくり "廾"@ja ;
+      prop:なまえ "にじゅうあ乚"@ja ;
+      prop:なまえ "こまぬき"@ja ;
+      prop:かたち [ rdf:value dic:U30FC, dic:UFF5C, dic:UFF5C ] ;
+      prop:かたち [ rdf:value dic:U30B5 ] ;
+      prop:かたち [ rdf:value res:U5341, dic:U30CE ] ;
+      .
+
+<http://example.org/katati/resource/U+5FC3>
+      prop:Unicode "U+5FC3"@ja ;
+      prop:つくり "心"@ja ;
+      prop:なまえ "こころ"@ja ;
+      prop:よみ "こころ"@ja ;
+      .
+
+<http://example.org/katati/resource/U+706C>
+      prop:Unicode "U+706C"@ja ;
+      prop:つくり "灬"@ja ;
+      prop:なまえ "れっか"@ja ;
+      prop:なまえ "れんが"@ja ;
+      prop:かたち [ rdf:value res:U4E36, res:U4E36, res:U4E36, res:U4E36 ] ;
+      .
+
+<http://example.org/katati/resource/U+66F0>
+      prop:Unicode "U+66F0"@ja ;
+      prop:つくり "曰"@ja ;
+      prop:なまえ "いわく"@ja ;
+      prop:なまえ "ひらび"@ja ;
+      prop:よみ "いわく"@ja ;
+      prop:かたち [ rdf:value res:U65E5 ] ;
+      prop:かたち [ rdf:value res:U53E3, dic:U30FC ] ;
+      .
+
+<http://example.org/katati/resource/U+76BF>
+      prop:Unicode "U+76BF"@ja ;
+      prop:つくり "皿"@ja ;
+      prop:なまえ "さら"@ja ;
+      prop:かたち [ rdf:value res:U56DB, dic:U30FC ] ;
+      .
+
+<http://example.org/katati/resource/U+6C3A>
+      prop:Unicode "U+6C3A"@ja ;
+      prop:つくり "氺"@ja ;
+      prop:なまえ "したみず"@ja ;
+      prop:かたち [ rdf:value res:U6C34 ] ;
+      prop:かたち [ rdf:value dic:UFF5C, dic:U30F3, res:U4E36, res:U4E36 ] ;
+      prop:かたち [ rdf:value dic:UFF5C, res:U4E36, res:U4E36, res:U4E36, res:U4E36 ] ;
+      .
+
+<http://example.org/katati/resource/U+821B>
+      prop:Unicode "U+821B"@ja ;
+      prop:つくり "舛"@ja ;
+      prop:なまえ "まいあし"@ja ;
+      prop:よみ "ます"@ja ;
+      prop:かたち [ rdf:value dic:U30BF, dic:UFF5C, dic:UFF5C, dic:U30FC, dic:U30FC ] ;
+      .
+
+<http://example.org/katati/resource/U+8863>
+      prop:Unicode "U+8863"@ja ;
+      prop:つくり "衣"@ja ;
+      prop:なまえ "ころも"@ja ;
+      prop:よみ "ころも"@ja ;
+      prop:かたち [ rdf:value res:U4EA0, dic:U30CE, dic:U30EC, res:U4E40, res:U4E36 ] ;
+      .
+
+<http://example.org/katati/resource/U+7F8A>
+      prop:Unicode "U+7F8A"@ja ;
+      prop:つくり "羊"@ja ;
+      prop:なまえ "ひつじへん"@ja ;
+      prop:なまえ "ひつじ"@ja ;
+      prop:よみ "ひつじ"@ja ;
+      prop:かたち [ rdf:value dic:U30FC, dic:U30FC, dic:U30FC, dic:UFF5C, res:U4E37 ] ;
+      .
+
+<http://example.org/katati/resource/U+531A>
+      prop:Unicode "U+531A"@ja ;
+      prop:つくり "匚"@ja ;
+      prop:なまえ "はこがまえ"@ja ;
+      prop:かたち [ rdf:value dic:U30FC, dic:U30FC, dic:UFF5C ] ;
+      .
+
+<http://example.org/katati/resource/U+5338>
+      prop:Unicode "U+5338"@ja ;
+      prop:つくり "匸"@ja ;
+      prop:なまえ "かくしがまえ"@ja ;
+      prop:かたち [ rdf:value dic:U30FC, dic:U30FC, dic:UFF5C ] ;
+      .
+
+<http://example.org/katati/resource/U+5182>
+      prop:Unicode "U+5182"@ja ;
+      prop:つくり "冂"@ja ;
+      prop:なまえ "けいがまえ"@ja ;
+      prop:なまえ "どうがまえ"@ja ;
+      prop:かたち [ rdf:value dic:UFF5C, dic:UFF5C, dic:U30FC ] ;
+      prop:かたち [ rdf:value dic:U30EF ] ;
+      .
+
+<http://example.org/katati/resource/U+51E0>
+      prop:Unicode "U+51E0"@ja ;
+      prop:つくり "几"@ja ;
+      prop:なまえ "かぜがまえ"@ja ;
+      prop:なまえ "かざがまえ"@ja ;
+      prop:かたち [ rdf:value dic:U30EB ] ;
+      prop:かたち [ rdf:value dic:U30EB, dic:U30FC ] ;
+      prop:かたち [ rdf:value res:U513F, dic:U30FC ] ;
+      .
+
+<http://example.org/katati/resource/U+56D7>
+      prop:Unicode "U+56D7"@ja ;
+      prop:つくり "囗"@ja ;
+      prop:なまえ "くにがまえ"@ja ;
+      prop:かたち [ rdf:value res:U53E3 ] ;
+      .
+
+<http://example.org/katati/resource/U+5F0B>
+      prop:Unicode "U+5F0B"@ja ;
+      prop:つくり "弋"@ja ;
+      prop:なまえ "しきがまえ"@ja ;
+      prop:かたち [ rdf:value dic:U30FC, res:U4E40, res:U4E36 ] ;
+      .
+
+<http://example.org/katati/resource/U+8C9D>
+      prop:Unicode "U+8C9D"@ja ;
+      prop:つくり "貝"@ja ;
+      prop:なまえ "かいへん"@ja ;
+      prop:なまえ "かい"@ja ;
+      prop:よみ "かい"@ja ;
+      prop:かたち [ rdf:value res:U76EE, res:U516B ] ;
+      prop:かたち [ rdf:value res:U76EE, res:U4E36, res:U4E36 ] ;
+      .
+
+<http://example.org/katati/resource/U+6C14>
+      prop:Unicode "U+6C14"@ja ;
+      prop:つくり "气"@ja ;
+      prop:なまえ "きがまえ"@ja ;
+      prop:かたち [ rdf:value dic:U30CE, dic:U30FC, dic:U30FC, dic:U30FC, res:U4E40 ] ;
+      .
+
+<http://example.org/katati/resource/U+884C>
+      prop:Unicode "U+884C"@ja ;
+      prop:つくり "行"@ja ;
+      prop:なまえ "ぎょうがまえ"@ja ;
+      prop:なまえ "ゆきがまえ"@ja ;
+      prop:よみ "ぎょう"@ja ;
+      prop:かたち [ rdf:value res:U5F73, res:U4E8D ] ;
+      .
+
+<http://example.org/katati/resource/U+9580>
+      prop:Unicode "U+9580"@ja ;
+      prop:つくり "門"@ja ;
+      prop:なまえ "もんがまえ"@ja ;
+      prop:よみ "もん"@ja ;
+      .
+
+<http://example.org/katati/resource/U+9B25>
+      prop:Unicode "U+9B25"@ja ;
+      prop:つくり "鬥"@ja ;
+      prop:なまえ "とうがまえ"@ja ;
+      prop:なまえ "たたがいがまえ"@ja ;
+      prop:よみ "とう"@ja ;
+      prop:かたち [ rdf:value res:U738B, res:U738B, dic:UFF5C, dic:UFF5C ] ;
+      .
+
+<http://example.org/katati/resource/U+5382>
+      prop:Unicode "U+5382"@ja ;
+      prop:つくり "厂"@ja ;
+      prop:なまえ "がんだれ"@ja ;
+      prop:かたち [ rdf:value dic:U30FC, dic:U30CE ] ;
+      prop:かたち [ rdf:value res:U2E81 ] ;
+      .
+
+<http://example.org/katati/resource/U+5C38>
+      prop:Unicode "U+5C38"@ja ;
+      prop:つくり "尸"@ja ;
+      prop:なまえ "しかばねだれ"@ja ;
+      prop:なまえ "かばねだれ"@ja ;
+      prop:よみ "しかばね"@ja ;
+      prop:かたち [ rdf:value res:U53E3, dic:U30CE ] ;
+      prop:かたち [ rdf:value dic:U0050 ] ;
+      .
+
+<http://example.org/katati/resource/U+5E7F>
+      prop:Unicode "U+5E7F"@ja ;
+      prop:つくり "广"@ja ;
+      prop:なまえ "まだれ"@ja ;
+      prop:かたち [ rdf:value res:U4E36, res:U5382 ] ;
+      .
+
+<http://example.org/katati/resource/U+7592>
+      prop:Unicode "U+7592"@ja ;
+      prop:つくり "疒"@ja ;
+      prop:なまえ "やまいだれ"@ja ;
+      prop:かたち [ rdf:value dic:U30F3, res:U5E7F ] ;
+      prop:かたち [ rdf:value res:U4E36, res:U4E36, res:U5E7F ] ;
+      .
+
+<http://example.org/katati/resource/U+51F5>
+      prop:Unicode "U+51F5"@ja ;
+      prop:つくり "凵"@ja ;
+      prop:なまえ "かんにょう"@ja ;
+      prop:なまえ "うけばこ"@ja ;
+      prop:かたち [ rdf:value dic:UFF5C, dic:UFF5C, dic:U30FC ] ;
+      prop:かたち [ rdf:value res:U ] ;
+      .
+
+<http://example.org/katati/resource/U+2ECC>
+      prop:Unicode "U+2ECC"@ja ;
+      prop:つくり "⻌"@ja ;
+      prop:なまえ "しんにょう"@ja ;
+      prop:なまえ "しんにゅう"@ja ;
+      prop:かたち [ rdf:value dic:U3048 ] ;
+      .
+
+<http://example.org/katati/resource/U+5EF4>
+      prop:Unicode "U+5EF4"@ja ;
+      prop:つくり "廴"@ja ;
+      prop:なまえ "えんにょう"@ja ;
+      prop:なまえ "いんにょう"@ja ;
+      prop:かたち [ rdf:value dic:U30D5, dic:U30D5, res:U4E40 ] ;
+      .
+
+<http://example.org/katati/resource/U+5E7A>
+      prop:Unicode "U+5E7A"@ja ;
+      prop:つくり "幺"@ja ;
+      prop:なまえ "いとがしら"@ja ;
+      prop:なまえ "よう"@ja ;
+      prop:かたち [ rdf:value dic:U304F, dic:U30E0 ] ;
+      .
+
+<http://example.org/katati/resource/U+4E00>
+      prop:Unicode "U+4E00"@ja ;
+      prop:つくり "一"@ja ;
+      prop:なまえ "いち"@ja ;
+      prop:かたち [ rdf:value dic:U30FC ] ;
+      .
+
+<http://example.org/katati/resource/U+4E3F>
+      prop:Unicode "U+4E3F"@ja ;
+      prop:つくり "丿"@ja ;
+      prop:なまえ "の"@ja ;
+      prop:なまえ "はらいぼう"@ja ;
+      prop:かたち [ rdf:value dic:U30CE ] ;
+      .
+
+<http://example.org/katati/resource/U+4E28>
+      prop:Unicode "U+4E28"@ja ;
+      prop:つくり "丨"@ja ;
+      prop:なまえ "ぼう"@ja ;
+      prop:なまえ "たてぼう"@ja ;
+      prop:かたち [ rdf:value dic:UFF5C ] ;
+      .
+
+<http://example.org/katati/resource/U+4E36>
+      prop:Unicode "U+4E36"@ja ;
+      prop:つくり "丶"@ja ;
+      prop:よみ "ちょん"@ja ;
+      prop:よみ "ちょぼ"@ja ;
+      prop:よみ "てん"@ja ;
+      prop:かたち [ rdf:value res:、 ] ;
+      .
+
+<http://example.org/katati/resource/U+4E5B>
+      prop:Unicode "U+4E5B"@ja ;
+      prop:つくり "乛"@ja ;
+      prop:かたち [ rdf:value dic:U30D5 ] ;
+      .
+
+<http://example.org/katati/resource/U+4E85>
+      prop:Unicode "U+4E85"@ja ;
+      prop:つくり "亅"@ja ;
+      prop:なまえ "はねぼう"@ja ;
+      prop:なまえ "かぎ"@ja ;
+      prop:かたち [ rdf:value dic:UFF5C ] ;
+      .
+
+<http://example.org/katati/resource/U+4E59>
+      prop:Unicode "U+4E59"@ja ;
+      prop:つくり "乙"@ja ;
+      prop:なまえ "おつ"@ja ;
+      prop:よみ "おつ"@ja ;
+      prop:かたち [ rdf:value dic:U0032 ] ;
+      .
+
+<http://example.org/katati/resource/U+2E84>
+      prop:Unicode "U+2E84"@ja ;
+      prop:つくり "⺄"@ja ;
+      prop:かたち [ rdf:value dic:U30FC, res:U4E40 ] ;
+      .
+
+<http://example.org/katati/resource/U+5341>
+      prop:Unicode "U+5341"@ja ;
+      prop:つくり "十"@ja ;
+      prop:よみ "じゅう"@ja ;
+      prop:かたち [ rdf:value dic:UFF0B ] ;
+      .
+
+<http://example.org/katati/resource/U+53B6>
+      prop:Unicode "U+53B6"@ja ;
+      prop:つくり "厶"@ja ;
+      prop:かたち [ rdf:value dic:U30E0 ] ;
+      .
+
+<http://example.org/katati/resource/U+4E8C>
+      prop:Unicode "U+4E8C"@ja ;
+      prop:つくり "二"@ja ;
+      prop:かたち [ rdf:value res:U4E8C ] ;
+      prop:かたち [ rdf:value dic:U30CB ] ;
+      prop:かたち [ rdf:value dic:U30FC, dic:U30FC ] ;
+      .
+
+<http://example.org/katati/resource/U+2E88>
+      prop:Unicode "U+2E88"@ja ;
+      prop:つくり "⺈"@ja ;
+      prop:かたち [ rdf:value dic:U30AF ] ;
+      prop:かたち [ rdf:value dic:U30CE, dic:U30D5 ] ;
+      .
+
+<http://example.org/katati/resource/U+5383>
+      prop:Unicode "U+5383"@ja ;
+      prop:つくり "厃"@ja ;
+      prop:かたち [ rdf:value res:U2E88, res:U5382 ] ;
+      .
+
+<http://example.org/katati/resource/U+20089>
+      prop:Unicode "U+20089"@ja ;
+      prop:つくり "𠂉"@ja ;
+      prop:かたち [ rdf:value dic:U30CE, dic:U30FC ] ;
+      .
+
+<http://example.org/katati/resource/U+535C>
+      prop:Unicode "U+535C"@ja ;
+      prop:つくり "卜"@ja ;
+      prop:かたち [ rdf:value dic:U30C8 ] ;
+      .
+
+<http://example.org/katati/resource/U+4E06>
+      prop:Unicode "U+4E06"@ja ;
+      prop:つくり "丆"@ja ;
+      prop:かたち [ rdf:value dic:U30FC, dic:U30CE ] ;
+      .
+
+<http://example.org/katati/resource/U+5315>
+      prop:Unicode "U+5315"@ja ;
+      prop:つくり "匕"@ja ;
+      prop:かたち [ rdf:value dic:U30D2 ] ;
+      prop:かたち [ rdf:value dic:U30CE, res:U4E5A ] ;
+      .
+
+<http://example.org/katati/resource/U+5200>
+      prop:Unicode "U+5200"@ja ;
+      prop:つくり "刀"@ja ;
+      prop:よみ "かたな"@ja ;
+      prop:かたち [ rdf:value dic:U30AB ] ;
+      prop:かたち [ rdf:value dic:U0037, dic:U30CE ] ;
+      .
+
+<http://example.org/katati/resource/U+3405>
+      prop:Unicode "U+3405"@ja ;
+      prop:つくり "㐅"@ja ;
+      prop:かたち [ rdf:value dic:U30E1 ] ;
+      .
+
+<http://example.org/katati/resource/U+4E42>
+      prop:Unicode "U+4E42"@ja ;
+      prop:つくり "乂"@ja ;
+      prop:かたち [ rdf:value dic:U30E1 ] ;
+      .
+
+<http://example.org/katati/resource/U+4E01>
+      prop:Unicode "U+4E01"@ja ;
+      prop:つくり "丁"@ja ;
+      prop:よみ "ちょう"@ja ;
+      prop:よみ "てい"@ja ;
+      prop:かたち [ rdf:value dic:U30FC, dic:UFF5C ] ;
+      prop:かたち [ rdf:value dic:U0054 ] ;
+      .
+
+<http://example.org/katati/resource/U+4E8D>
+      prop:Unicode "U+4E8D"@ja ;
+      prop:つくり "亍"@ja ;
+      prop:かたち [ rdf:value dic:U30C6 ] ;
+      prop:かたち [ rdf:value res:U4E01, dic:U30FC ] ;
+      .
+
+<http://example.org/katati/resource/U+9FB4>
+      prop:Unicode "U+9FB4"@ja ;
+      prop:つくり "龴"@ja ;
+      prop:かたち [ rdf:value dic:U30DE ] ;
+      .
+
+<http://example.org/katati/resource/U+4E05>
+      prop:Unicode "U+4E05"@ja ;
+      prop:つくり "丅"@ja ;
+      prop:かたち [ rdf:value dic:U0054 ] ;
+      .
+
+<http://example.org/katati/resource/U+2E81>
+      prop:Unicode "U+2E81"@ja ;
+      prop:つくり "⺁"@ja ;
+      prop:かたち [ rdf:value dic:U30FC, dic:U30CE ] ;
+      prop:かたち [ rdf:value dic:U30CE, dic:U30CE ] ;
+      .
+
+<http://example.org/katati/resource/U+5DDC>
+      prop:Unicode "U+5DDC"@ja ;
+      prop:つくり "巜"@ja ;
+      prop:かたち [ rdf:value dic:U304F, dic:U304F ] ;
+      .
+
+<http://example.org/katati/resource/U+2E80>
+      prop:Unicode "U+2E80"@ja ;
+      prop:つくり "⺀"@ja ;
+      prop:かたち [ rdf:value res:U4E36, res:U4E36 ] ;
+      .
+
+<http://example.org/katati/resource/U+4E86>
+      prop:Unicode "U+4E86"@ja ;
+      prop:つくり "了"@ja ;
+      prop:よみ "りょう"@ja ;
+      prop:かたち [ rdf:value dic:U30D5, dic:UFF5C ] ;
+      .
+
+<http://example.org/katati/resource/U+4E29>
+      prop:Unicode "U+4E29"@ja ;
+      prop:つくり "丩"@ja ;
+      prop:かたち [ rdf:value dic:U30EC, dic:UFF5C ] ;
+      .
+
+<http://example.org/katati/resource/U+5915>
+      prop:Unicode "U+5915"@ja ;
+      prop:つくり "夕"@ja ;
+      prop:よみ "ゆう"@ja ;
+      prop:かたち [ rdf:value dic:U30BF ] ;
+      prop:かたち [ rdf:value dic:U30AF, res:U4E36 ] ;
+      .
+
+<http://example.org/katati/resource/U+4491>
+      prop:Unicode "U+4491"@ja ;
+      prop:つくり "䒑"@ja ;
+      prop:かたち [ rdf:value dic:U30B5 ] ;
+      prop:かたち [ rdf:value dic:U30FC, res:U4E37 ] ;
+      .
+
+<http://example.org/katati/resource/U+58EB>
+      prop:Unicode "U+58EB"@ja ;
+      prop:つくり "士"@ja ;
+      prop:よみ "し"@ja ;
+      prop:かたち [ rdf:value res:U5341, dic:U30FC ] ;
+      .
+
+<http://example.org/katati/resource/U+5140>
+      prop:Unicode "U+5140"@ja ;
+      prop:つくり "兀"@ja ;
+      prop:かたち [ rdf:value dic:U30FC, res:U513F ] ;
+      prop:かたち [ rdf:value dic:U03C0 ] ;
+      prop:かたち [ rdf:value dic:U03A0 ] ;
+      .
+
+<http://example.org/katati/resource/U+5F50>
+      prop:Unicode "U+5F50"@ja ;
+      prop:つくり "彐"@ja ;
+      prop:かたち [ rdf:value dic:U30E8 ] ;
+      prop:かたち [ rdf:value dic:U30B3, dic:U30FC ] ;
+      .
+
+<http://example.org/katati/resource/U+5E72>
+      prop:Unicode "U+5E72"@ja ;
+      prop:つくり "干"@ja ;
+      prop:よみ "ほす"@ja ;
+      prop:かたち [ rdf:value res:U5341, dic:U30FC ] ;
+      prop:かたち [ rdf:value dic:U0054, dic:U30FC ] ;
+      .
+
+<http://example.org/katati/resource/U+5DF1>
+      prop:Unicode "U+5DF1"@ja ;
+      prop:つくり "己"@ja ;
+      prop:なまえ "おのれ"@ja ;
+      prop:よみ "おのれ"@ja ;
+      prop:かたち [ rdf:value dic:U30B3, res:U4E5A ] ;
+      .
+
+<http://example.org/katati/resource/U+2E8C>
+      prop:Unicode "U+2E8C"@ja ;
+      prop:つくり "⺌"@ja ;
+      prop:かたち [ rdf:value dic:UFF5C, res:U4E36, res:U4E36 ] ;
+      prop:かたち [ rdf:value res:U4E36, res:U4E36, res:U4E36 ] ;
+      .
+
+<http://example.org/katati/resource/U+5DDB>
+      prop:Unicode "U+5DDB"@ja ;
+      prop:つくり "巛"@ja ;
+      prop:かたち [ rdf:value dic:U304F, dic:U304F, dic:U304F ] ;
+      prop:かたち [ rdf:value res:U5DDD ] ;
+      .
+
+<http://example.org/katati/resource/U+2E8D>
+      prop:Unicode "U+2E8D"@ja ;
+      prop:つくり "⺍"@ja ;
+      prop:なまえ "つかんむり"@ja ;
+      prop:かたち [ rdf:value res:U4E36, res:U4E36, res:U4E36 ] ;
+      prop:かたち [ rdf:value dic:U30C4 ] ;
+      .
+
+<http://example.org/katati/resource/U+5203>
+      prop:Unicode "U+5203"@ja ;
+      prop:つくり "刃"@ja ;
+      prop:よみ "やいば"@ja ;
+      prop:よみ "は"@ja ;
+      prop:かたち [ rdf:value res:U5200, res:U4E36 ] ;
+      prop:かたち [ rdf:value dic:U0037, dic:U30E1 ] ;
+      prop:かたち [ rdf:value dic:U0037, dic:U30CE, res:U4E36 ] ;
+      .
+
+<http://example.org/katati/resource/U+4E2B>
+      prop:Unicode "U+4E2B"@ja ;
+      prop:つくり "丫"@ja ;
+      prop:かたち [ rdf:value dic:U0059 ] ;
+      prop:かたち [ rdf:value res:U4E36, res:U4E36, dic:UFF5C ] ;
+      .
+
+<http://example.org/katati/resource/U+4E4B>
+      prop:Unicode "U+4E4B"@ja ;
+      prop:つくり "之"@ja ;
+      prop:よみ "の"@ja ;
+      prop:かたち [ rdf:value res:U4E36, dic:U30D5, res:ヘ ] ;
+      prop:かたち [ rdf:value res:U4E36, dic:U30D5, res:U4E40 ] ;
+      .
+
+<http://example.org/katati/resource/U+4E45>
+      prop:Unicode "U+4E45"@ja ;
+      prop:つくり "久"@ja ;
+      prop:よみ "ひさしい"@ja ;
+      prop:かたち [ rdf:value dic:U30AF, dic:U30CE ] ;
+      prop:かたち [ rdf:value dic:U30CE, dic:U30D5, dic:U30CE ] ;
+      .
+
+<http://example.org/katati/resource/U+4E0B>
+      prop:Unicode "U+4E0B"@ja ;
+      prop:つくり "下"@ja ;
+      prop:よみ "した"@ja ;
+      prop:かたち [ rdf:value dic:U30FC, dic:U30C8 ] ;
+      prop:かたち [ rdf:value dic:U30FC, dic:UFF5C, res:U4E36 ] ;
+      .
+
+<http://example.org/katati/resource/U+4E2C>
+      prop:Unicode "U+4E2C"@ja ;
+      prop:つくり "丬"@ja ;
+      prop:かたち [ rdf:value res:U4E36, res:U4E36, dic:UFF5C ] ;
+      prop:かたち [ rdf:value dic:U30F3, dic:UFF5C ] ;
+      .
+
+<http://example.org/katati/resource/U+4E07>
+      prop:Unicode "U+4E07"@ja ;
+      prop:つくり "万"@ja ;
+      prop:よみ "まん"@ja ;
+      prop:よみ "よろづ"@ja ;
+      prop:かたち [ rdf:value dic:U30AB, dic:U30FC ] ;
+      prop:かたち [ rdf:value dic:U30FC, dic:U30D5, dic:U30CE ] ;
+      .
+
+<http://example.org/katati/resource/U+4ECE>
+      prop:Unicode "U+4ECE"@ja ;
+      prop:つくり "从"@ja ;
+      prop:かたち [ rdf:value res:U4EBA, res:U4EBA ] ;
+      .
+
+<http://example.org/katati/resource/U+6B62>
+      prop:Unicode "U+6B62"@ja ;
+      prop:つくり "止"@ja ;
+      prop:よみ "とめる"@ja ;
+      prop:かたち [ rdf:value dic:U30C8, dic:UFF5C, dic:U30FC ] ;
+      prop:かたち [ rdf:value res:U4E0A, dic:UFF5C ] ;
+      .
+
+<http://example.org/katati/resource/U+722B>
+      prop:Unicode "U+722B"@ja ;
+      prop:つくり "爫"@ja ;
+      prop:かたち [ rdf:value dic:U30CE, res:U4E36, res:U4E36, res:U4E36 ] ;
+      .
+
+<http://example.org/katati/resource/U+6BD4>
+      prop:Unicode "U+6BD4"@ja ;
+      prop:つくり "比"@ja ;
+      prop:よみ "くらべる"@ja ;
+      prop:よみ "ひ"@ja ;
+      prop:かたち [ rdf:value dic:U30D2, dic:U30D2 ] ;
+      .
+
+<http://example.org/katati/resource/U+4E30>
+      prop:Unicode "U+4E30"@ja ;
+      prop:つくり "丰"@ja ;
+      prop:かたち [ rdf:value res:U4E09, dic:UFF5C ] ;
+      prop:かたち [ rdf:value res:U4E09, dic:U30CE ] ;
+      prop:かたち [ rdf:value res:U5341, dic:U30FC, dic:U30FC ] ;
+      .
+
+<http://example.org/katati/resource/U+9FB7>
+      prop:Unicode "U+9FB7"@ja ;
+      prop:つくり "龷"@ja ;
+      prop:かたち [ rdf:value dic:U30FC, dic:U30FC, dic:UFF5C, dic:UFF5C ] ;
+      .
+
+<http://example.org/katati/resource/U+592B>
+      prop:Unicode "U+592B"@ja ;
+      prop:つくり "夫"@ja ;
+      prop:なまえ "おっと"@ja ;
+      prop:よみ "おっと"@ja ;
+      prop:かたち [ rdf:value res:U4EBA, dic:U30FC, dic:U30FC ] ;
+      .
+
+<http://example.org/katati/resource/U+9FB6>
+      prop:Unicode "U+9FB6"@ja ;
+      prop:つくり "龶"@ja ;
+      prop:かたち [ rdf:value res:U571F, dic:U30FC ] ;
+      prop:かたち [ rdf:value res:U4E09, dic:UFF5C ] ;
+      .
+
+<http://example.org/katati/resource/U+5344>
+      prop:Unicode "U+5344"@ja ;
+      prop:つくり "卄"@ja ;
+      prop:かたち [ rdf:value dic:UFF5C, dic:UFF5C, dic:U30FC ] ;
+      .
+
+<http://example.org/katati/resource/U+536A>
+      prop:Unicode "U+536A"@ja ;
+      prop:つくり "卪"@ja ;
+      prop:かたち [ rdf:value res:U5369, res:U4E36 ] ;
+      .
+
+<http://example.org/katati/resource/U+353E>
+      prop:Unicode "U+353E"@ja ;
+      prop:つくり "㔾"@ja ;
+      prop:かたち [ rdf:value dic:U30D5, res:U4E5A ] ;
+      .
+
+<http://example.org/katati/resource/U+4E5F>
+      prop:Unicode "U+4E5F"@ja ;
+      prop:つくり "也"@ja ;
+      prop:なまえ "なり"@ja ;
+      prop:よみ "なり"@ja ;
+      prop:かたち [ rdf:value dic:U30D5, res:U4E5A, dic:UFF5C ] ;
+      .
+
+<http://example.org/katati/resource/U+5DF3>
+      prop:Unicode "U+5DF3"@ja ;
+      prop:つくり "巳"@ja ;
+      prop:なまえ "み"@ja ;
+      prop:なまえ "へび"@ja ;
+      prop:よみ "み"@ja ;
+      prop:よみ "へび"@ja ;
+      prop:かたち [ rdf:value dic:U30B3, res:U4E5A ] ;
+      .
+
+<http://example.org/katati/resource/U+4E61>
+      prop:Unicode "U+4E61"@ja ;
+      prop:つくり "乡"@ja ;
+      prop:かたち [ rdf:value dic:U30EC, dic:U30EC, dic:U30CE ] ;
+      .
+
+<http://example.org/katati/resource/U+9FB0>
+      prop:Unicode "U+9FB0"@ja ;
+      prop:つくり "龰"@ja ;
+      prop:かたち [ rdf:value dic:U30C8, dic:U30CE, res:U4E40 ] ;
+      prop:かたち [ rdf:value dic:UFF5C, dic:U30FC, res:U4E40, dic:U30CE ] ;
+      .
+
+<http://example.org/katati/resource/U+233B3>
+      prop:Unicode "U+233B3"@ja ;
+      prop:つくり "𣎳"@ja ;
+      prop:かたち [ rdf:value res:U5341, dic:U30EB ] ;
+      prop:かたち [ rdf:value res:U6728 ] ;
+      .
+
+<http://example.org/katati/resource/U+723B>
+      prop:Unicode "U+723B"@ja ;
+      prop:つくり "爻"@ja ;
+      prop:かたち [ rdf:value dic:U30E1, dic:U30E1 ] ;
+      prop:かたち [ rdf:value res:U4E42, res:U3405 ] ;
+      .
+
+<http://example.org/katati/resource/U+7236>
+      prop:Unicode "U+7236"@ja ;
+      prop:つくり "父"@ja ;
+      prop:よみ "ちち"@ja ;
+      prop:かたち [ rdf:value dic:U30CF, dic:U30E1 ] ;
+      .
+
+<http://example.org/katati/resource/U+2EA7>
+      prop:Unicode "U+2EA7"@ja ;
+      prop:つくり "⺧"@ja ;
+      prop:かたち [ rdf:value dic:U30CE, res:U5341, dic:U30FC ] ;
+      prop:かたち [ rdf:value dic:U30CE, res:U571F ] ;
+      .
+
+<http://example.org/katati/resource/U+5198>
+      prop:Unicode "U+5198"@ja ;
+      prop:つくり "冘"@ja ;
+      prop:かたち [ rdf:value res:U5196, dic:U30CE, res:U4E5A ] ;
+      .
+
+<http://example.org/katati/resource/U+5E00>
+      prop:Unicode "U+5E00"@ja ;
+      prop:つくり "帀"@ja ;
+      prop:かたち [ rdf:value dic:U30FC, res:U5DFE ] ;
+      .
+
+<http://example.org/katati/resource/U+6BCB>
+      prop:Unicode "U+6BCB"@ja ;
+      prop:つくり "毋"@ja ;
+      prop:よみ "はは"@ja ;
+      prop:かたち [ rdf:value dic:U30EC, dic:U0037, dic:UFF5C, dic:U30FC ] ;
+      .
+
+<http://example.org/katati/resource/U+53B7>
+      prop:Unicode "U+53B7"@ja ;
+      prop:つくり "厷"@ja ;
+      prop:かたち [ rdf:value dic:UFF0B, dic:U30E0 ] ;
+      prop:かたち [ rdf:value dic:U30FC, dic:U30CE, dic:U30E0 ] ;
+      .
+
+<http://example.org/katati/resource/U+4E0F>
+      prop:Unicode "U+4E0F"@ja ;
+      prop:つくり "丏"@ja ;
+      prop:かたち [ rdf:value dic:U30FC, dic:UFF5C, dic:U30D5, dic:U30EC ] ;
+      .
+
+<http://example.org/katati/resource/U+34C1>
+      prop:Unicode "U+34C1"@ja ;
+      prop:つくり "㓁"@ja ;
+      prop:かたち [ rdf:value res:U5196, res:U513F ] ;
+      .
+
+<http://example.org/katati/resource/U+20B1D>
+      prop:Unicode "U+20B1D"@ja ;
+      prop:つくり "𠬝"@ja ;
+      prop:かたち [ rdf:value res:U5369, res:U53C8 ] ;
+      .
+
+<http://example.org/katati/resource/U+215D7>
+      prop:Unicode "U+215D7"@ja ;
+      prop:つくり "𡗗"@ja ;
+      prop:かたち [ rdf:value res:U4E09, res:U4EBA ] ;
+      .
+
+<http://example.org/katati/resource/U+382F>
+      prop:Unicode "U+382F"@ja ;
+      prop:つくり "㠯"@ja ;
+      prop:かたち [ rdf:value dic:UFF5C, res:U53E3, res:U53E3 ] ;
+      prop:かたち [ rdf:value dic:U0050, dic:U30B3 ] ;
+      prop:かたち [ rdf:value dic:UFF5C, dic:U30B3, dic:U30B3 ] ;
+      prop:かたち [ rdf:value dic:U0042 ] ;
+      .
+
+<http://example.org/katati/resource/U+9FB8>
+      prop:Unicode "U+9FB8"@ja ;
+      prop:つくり "龸"@ja ;
+      prop:かたち [ rdf:value res:U5196, res:U2E8C ] ;
+      .
+
+<http://example.org/katati/resource/U+9FB1>
+      prop:Unicode "U+9FB1"@ja ;
+      prop:つくり "龱"@ja ;
+      prop:かたち [ rdf:value res:U53E3, dic:U30E1 ] ;
+      .
+
+<http://example.org/katati/resource/U+5725>
+      prop:Unicode "U+5725"@ja ;
+      prop:つくり "圥"@ja ;
+      prop:かたち [ rdf:value res:U571F, res:U513F ] ;
+      .
+
+<http://example.org/katati/resource/U+5B83>
+      prop:Unicode "U+5B83"@ja ;
+      prop:つくり "它"@ja ;
+      prop:かたち [ rdf:value res:U5B80, res:U5315 ] ;
+      .
+
+<http://example.org/katati/resource/U+672E>
+      prop:Unicode "U+672E"@ja ;
+      prop:つくり "朮"@ja ;
+      prop:かたち [ rdf:value res:U233B3, res:U4E36 ] ;
+      .
+
+<http://example.org/katati/resource/U+53E6>
+      prop:Unicode "U+53E6"@ja ;
+      prop:つくり "另"@ja ;
+      prop:かたち [ rdf:value res:U53E3, res:U529B ] ;
+      .
+
+<http://example.org/katati/resource/U+9578>
+      prop:Unicode "U+9578"@ja ;
+      prop:つくり "镸"@ja ;
+      prop:かたち [ rdf:value dic:U30FC, dic:U30FC, dic:U30FC, dic:U30FC, dic:UFF5C, dic:U30E0 ] ;
+      prop:かたち [ rdf:value res:U9577 ] ;
+      .
+
+<http://example.org/katati/resource/U+459D>
+      prop:Unicode "U+459D"@ja ;
+      prop:つくり "䖝"@ja ;
+      prop:かたち [ rdf:value dic:U30CE, res:U866B ] ;
+      .
+
+<http://example.org/katati/resource/U+514C>
+      prop:Unicode "U+514C"@ja ;
+      prop:つくり "兌"@ja ;
+      prop:よみ "だ"@ja ;
+      prop:かたち [ rdf:value res:U516B, res:U5144 ] ;
+      .
+
+<http://example.org/katati/resource/U+9FBA>
+      prop:Unicode "U+9FBA"@ja ;
+      prop:つくり "龺"@ja ;
+      prop:かたち [ rdf:value res:U5341, res:U65E5, res:U5341 ] ;
+      .
+
+<http://example.org/katati/resource/U+8FB5>
+      prop:Unicode "U+8FB5"@ja ;
+      prop:つくり "辵"@ja ;
+      prop:なまえ "そうにょう"@ja ;
+      prop:かたち [ rdf:value dic:U30CE, dic:U30CE, dic:U30CE, dic:U30C8, dic:U30CE, res:U4E40 ] ;
+      .
+
+<http://example.org/katati/resource/U+206A4>
+      prop:Unicode "U+206A4"@ja ;
+      prop:つくり "𠚤"@ja ;
+      prop:よみ "おなじ"@ja ;
+      prop:かたち [ rdf:value dic:U30CE, dic:U30DE ] ;
+      prop:かたち [ rdf:value dic:U30AF, res:U4E36 ] ;
+      .
+
+<http://example.org/katati/resource/U+5343>
+      prop:Unicode "U+5343"@ja ;
+      prop:つくり "千"@ja ;
+      prop:よみ "せん"@ja ;
+      prop:かたち [ rdf:value dic:U30CE, res:U5341 ] ;
+      .
+
+<http://example.org/katati/resource/U+5DDD>
+      prop:Unicode "U+5DDD"@ja ;
+      prop:つくり "川"@ja ;
+      prop:よみ "かわ"@ja ;
+      prop:かたち [ rdf:value dic:UFF5C, dic:UFF5C, dic:UFF5C ] ;
+      prop:かたち [ rdf:value dic:U30CE, dic:UFF5C, dic:UFF5C ] ;
+      .
+
+<http://example.org/katati/resource/U+4E0A>
+      prop:Unicode "U+4E0A"@ja ;
+      prop:つくり "上"@ja ;
+      prop:よみ "うえ"@ja ;
+      prop:かたち [ rdf:value dic:U30C8, dic:U30FC ] ;
+      .
+
+<http://example.org/katati/resource/U+4E2D>
+      prop:Unicode "U+4E2D"@ja ;
+      prop:つくり "中"@ja ;
+      prop:よみ "なか"@ja ;
+      prop:かたち [ rdf:value res:U53E3, dic:UFF5C ] ;
+      .
+
+<http://example.org/katati/resource/U+4E95>
+      prop:Unicode "U+4E95"@ja ;
+      prop:つくり "井"@ja ;
+      prop:よみ "い"@ja ;
+      prop:かたち [ rdf:value dic:UFF5C, dic:UFF5C, dic:U30FC, dic:U30FC ] ;
+      .
+
+<http://example.org/katati/resource/U+6587>
+      prop:Unicode "U+6587"@ja ;
+      prop:つくり "文"@ja ;
+      prop:よみ "ぶん"@ja ;
+      prop:かたち [ rdf:value res:U4E36, dic:U30FC, dic:U30E1 ] ;
+      prop:かたち [ rdf:value res:U4E36, dic:U30FC, dic:U30CE, res:U4E40 ] ;
+      .
+
+<http://example.org/katati/resource/U+4ECA>
+      prop:Unicode "U+4ECA"@ja ;
+      prop:つくり "今"@ja ;
+      prop:よみ "いま"@ja ;
+      prop:かたち [ rdf:value res:U4EBA, dic:U30FC, dic:U30D5 ] ;
+      .
+
+<http://example.org/katati/resource/U+672A>
+      prop:Unicode "U+672A"@ja ;
+      prop:つくり "未"@ja ;
+      prop:よみ "いまだ"@ja ;
+      prop:かたち [ rdf:value dic:U30FC, dic:U30FC, res:U6728 ] ;
+      .
+
+<http://example.org/katati/resource/U+672B>
+      prop:Unicode "U+672B"@ja ;
+      prop:つくり "末"@ja ;
+      prop:よみ "すえ"@ja ;
+      prop:かたち [ rdf:value dic:U30FC, dic:U30FC, res:U6728 ] ;
+      .
+
+<http://example.org/katati/resource/U+4E03>
+      prop:Unicode "U+4E03"@ja ;
+      prop:つくり "七"@ja ;
+      prop:よみ "なな"@ja ;
+      prop:かたち [ rdf:value dic:U30FC, res:U4E5A ] ;
+      .
+
+<http://example.org/katati/resource/U+91C7>
+      prop:Unicode "U+91C7"@ja ;
+      prop:つくり "采"@ja ;
+      prop:よみ "さい"@ja ;
+      prop:かたち [ rdf:value dic:U30CE, dic:U30C4, res:U6728 ] ;
+      prop:かたち [ rdf:value dic:U30CE, res:U4E36, res:U4E36, res:U4E36, res:U6728 ] ;
+      .
+
+<http://example.org/katati/resource/U+5C0F>
+      prop:Unicode "U+5C0F"@ja ;
+      prop:つくり "小"@ja ;
+      prop:よみ "しょう"@ja ;
+      prop:よみ "ちいさい"@ja ;
+      prop:かたち [ rdf:value dic:UFF5C, res:U516B ] ;
+      prop:かたち [ rdf:value dic:UFF5C, res:U4E36, res:U4E36 ] ;
+      .
+
+<http://example.org/katati/resource/U+8D70>
+      prop:Unicode "U+8D70"@ja ;
+      prop:つくり "走"@ja ;
+      prop:なまえ "そうにょう"@ja ;
+      prop:よみ "そう"@ja ;
+      prop:よみ "はしる"@ja ;
+      prop:かたち [ rdf:value res:U571F, dic:U30C8, dic:U30CE, res:U4E40 ] ;
+      .
+
+<http://example.org/katati/resource/U+9CE5>
+      prop:Unicode "U+9CE5"@ja ;
+      prop:つくり "鳥"@ja ;
+      prop:なまえ "とりへん"@ja ;
+      prop:なまえ "とり"@ja ;
+      prop:よみ "とり"@ja ;
+      prop:かたち [ rdf:value res:U767D, dic:UFF5C, dic:U30FC, dic:U30D5, res:U706C ] ;
+      .
+
+<http://example.org/katati/resource/U+98A8>
+      prop:Unicode "U+98A8"@ja ;
+      prop:つくり "風"@ja ;
+      prop:なまえ "かぜ"@ja ;
+      prop:よみ "かぜ"@ja ;
+      prop:かたち [ rdf:value res:U51E0, dic:U30CE, res:U866B ] ;
+      prop:かたち [ rdf:value res:U51E0, dic:U30CE, res:U65E5, dic:UFF5C, dic:U30FC, res:U4E36 ] ;
+      .
+
+<http://example.org/katati/resource/U+9B3C>
+      prop:Unicode "U+9B3C"@ja ;
+      prop:つくり "鬼"@ja ;
+      prop:なまえ "きにょう"@ja ;
+      prop:よみ "おに"@ja ;
+      prop:かたち [ rdf:value res:U4E36, res:U7530, res:U513F, dic:U30E0 ] ;
+      .
+
+<http://example.org/katati/resource/U+9F20>
+      prop:Unicode "U+9F20"@ja ;
+      prop:つくり "鼠"@ja ;
+      prop:なまえ "ねずみ"@ja ;
+      prop:よみ "ねずみ"@ja ;
+      prop:かたち [ rdf:value res:U81FC, dic:U30EC, dic:U30EC, dic:UFF5C, res:U4E36, res:U4E36, res:U4E36, res:U4E36 ] ;
+      .
+
+<http://example.org/katati/resource/U+592C>
+      prop:Unicode "U+592C"@ja ;
+      prop:つくり "夬"@ja ;
+      prop:よみ "かい"@ja ;
+      prop:かたち [ rdf:value dic:U30E6, res:U4EBA ] ;
+      prop:かたち [ rdf:value dic:U30B3, res:U4EBA ] ;
+      .
+
+<http://example.org/katati/resource/U+4E40>
+      prop:Unicode "U+4E40"@ja ;
+      prop:つくり "乀"@ja ;
+      prop:なまえ "ふつ"@ja ;
+      prop:よみ "ふつ"@ja ;
+      prop:かたち [ rdf:value dic:U3078 ] ;
+      prop:かたち [ rdf:value res:はらい ] ;
+      .
+
+<http://example.org/katati/resource/U+8FB6>
+      prop:Unicode "U+8FB6"@ja ;
+      prop:つくり "辶"@ja ;
+      prop:なまえ "しんにょう"@ja ;
+      prop:なまえ "しんにゅう"@ja ;
+      prop:かたち [ rdf:value res:U2ECC, res:U4E36 ] ;
+      .
+
+<http://example.org/katati/resource/U+4E09>
+      prop:Unicode "U+4E09"@ja ;
+      prop:つくり "三"@ja ;
+      prop:よみ "さん"@ja ;
+      prop:かたち [ rdf:value dic:U30DF ] ;
+      prop:かたち [ rdf:value dic:U30FC, dic:U30FC, dic:U30FC ] ;
+      .
+
+<http://example.org/katati/resource/U+4E37>
+      prop:Unicode "U+4E37"@ja ;
+      prop:つくり "丷"@ja ;
+      prop:かたち [ rdf:value dic:U30BD ] ;
+      prop:かたち [ rdf:value res:U4E36, res:U4E36 ] ;
+      .
+
+<http://example.org/katati/resource/U+4E4A>
+      prop:Unicode "U+4E4A"@ja ;
+      prop:つくり "乊"@ja ;
+      prop:かたち [ rdf:value dic:U30CE, res:U4E37 ] ;
+      .
+
+<http://example.org/katati/resource/U+5360>
+      prop:Unicode "U+5360"@ja ;
+      prop:つくり "占"@ja ;
+      prop:よみ "うらない"@ja ;
+      prop:かたち [ rdf:value dic:U30C8, res:U53E3 ] ;
+      .
+
+<http://example.org/katati/resource/U+914B>
+      prop:Unicode "U+914B"@ja ;
+      prop:つくり "酋"@ja ;
+      prop:かたち [ rdf:value res:U4E37, res:U9149 ] ;
+      prop:かたち [ rdf:value res:U4491, res:U513F, res:U65E5 ] ;
+      prop:かたち [ rdf:value res:U516B, res:U9149 ] ;
+      .
+
+<http://example.org/katati/resource/U+897F>
+      prop:Unicode "U+897F"@ja ;
+      prop:つくり "西"@ja ;
+      prop:よみ "にし"@ja ;
+      prop:かたち [ rdf:value dic:U30FC, res:U53E3, res:U513F ] ;
+      .
+
+<http://example.org/katati/resource/U+81EA>
+      prop:Unicode "U+81EA"@ja ;
+      prop:つくり "自"@ja ;
+      prop:よみ "おのずから"@ja ;
+      prop:かたち [ rdf:value res:U76EE, res:U4E36 ] ;
+      .
+
+<http://example.org/katati/resource/U+624D>
+      prop:Unicode "U+624D"@ja ;
+      prop:つくり "才"@ja ;
+      prop:よみ "さい"@ja ;
+      prop:かたち [ rdf:value dic:U30FC, dic:UFF5C, dic:U30CE ] ;
+      .
+
+<http://example.org/katati/resource/U+624B>
+      prop:Unicode "U+624B"@ja ;
+      prop:つくり "手"@ja ;
+      prop:よみ "て"@ja ;
+      prop:かたち [ rdf:value dic:U30CE, dic:U30FC, dic:U30FC, dic:UFF5C ] ;
+      .
+
+<http://example.org/katati/resource/U+56DB>
+      prop:Unicode "U+56DB"@ja ;
+      prop:つくり "四"@ja ;
+      prop:よみ "よん"@ja ;
+      prop:かたち [ rdf:value res:U53E3, res:U513F ] ;
+      .
+
+<http://example.org/katati/resource/U+793A>
+      prop:Unicode "U+793A"@ja ;
+      prop:つくり "示"@ja ;
+      prop:よみ "しめす"@ja ;
+      prop:かたち [ rdf:value res:U4E8D, res:U516B ] ;
+      prop:かたち [ rdf:value dic:U30FC, dic:U30FC, res:U5C0F ] ;
+      .
+
+<http://example.org/katati/resource/U+4EA6>
+      prop:Unicode "U+4EA6"@ja ;
+      prop:つくり "亦"@ja ;
+      prop:よみ "また"@ja ;
+      prop:かたち [ rdf:value res:U4EA0, dic:U30CE, dic:UFF5C, res:U4E36, res:U4E36 ] ;
+      .
+
+<http://example.org/katati/resource/U+652F>
+      prop:Unicode "U+652F"@ja ;
+      prop:つくり "支"@ja ;
+      prop:よみ "し"@ja ;
+      prop:よみ "ささえる"@ja ;
+      prop:かたち [ rdf:value res:U5341, res:U53C8 ] ;
+      .
+
+<http://example.org/katati/resource/U+826F>
+      prop:Unicode "U+826F"@ja ;
+      prop:つくり "良"@ja ;
+      prop:よみ "よい"@ja ;
+      prop:かたち [ rdf:value res:U826E, res:U4E36 ] ;
+      .
+
+<http://example.org/katati/resource/U+81FC>
+      prop:Unicode "U+81FC"@ja ;
+      prop:つくり "臼"@ja ;
+      prop:よみ "うす"@ja ;
+      prop:かたち [ rdf:value res:U767D ] ;
+      .
+
+<http://example.org/katati/resource/U+5144>
+      prop:Unicode "U+5144"@ja ;
+      prop:つくり "兄"@ja ;
+      prop:よみ "あに"@ja ;
+      prop:かたち [ rdf:value res:U53E3, res:U513F ] ;
+      .
+
+<http://example.org/katati/resource/U+6C34>
+      prop:Unicode "U+6C34"@ja ;
+      prop:つくり "水"@ja ;
+      prop:よみ "みず"@ja ;
+      prop:よみ "すい"@ja ;
+      prop:かたち [ rdf:value dic:UFF5C, dic:U30D5, res:U4E40, res:U4E36 ] ;
+      .
+
+<http://example.org/katati/resource/U+518A>
+      prop:Unicode "U+518A"@ja ;
+      prop:つくり "冊"@ja ;
+      prop:よみ "さつ"@ja ;
+      prop:かたち [ rdf:value res:U5182, dic:UFF5C, dic:UFF5C, dic:U30FC ] ;
+      .
+
+<http://example.org/katati/resource/U+53E4>
+      prop:Unicode "U+53E4"@ja ;
+      prop:つくり "古"@ja ;
+      prop:よみ "ふるい"@ja ;
+      prop:よみ "こ"@ja ;
+      prop:かたち [ rdf:value res:U53E3, res:U5341 ] ;
+      .
+
+<http://example.org/katati/resource/U+5FC5>
+      prop:Unicode "U+5FC5"@ja ;
+      prop:つくり "必"@ja ;
+      prop:よみ "かならず"@ja ;
+      prop:よみ "ひつ"@ja ;
+      prop:かたち [ rdf:value res:U4E5A, dic:U30CE, res:U4E36, res:U4E36, res:U4E36 ] ;
+      .
+
