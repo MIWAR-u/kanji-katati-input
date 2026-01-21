@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>漢字部首検索アプリ - 完全LODリンク対応版</title>
+    <style>
+        /* CSSは元のデザインを厳守 */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Hiragino Kaku Gothic Pro', 'Meiryo', sans-serif; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); min-height: 100vh; padding: 20px; }
+        .container { max-width: 850px; margin: 0 auto; background: white; border-radius: 20px; box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3); padding: 40px; }
+        h1 { text-align: center; color: #333; margin-bottom: 30px; }
+        .file-upload { margin-bottom: 30px; padding: 20px; background: #f8f9fa; border-radius: 10px; border: 2px dashed #ddd; }
+        .status { padding: 10px; border-radius: 5px; margin-top: 10px; font-size: 14px; }
+        .status.success { background: #d4edda; color: #155724; }
+        input[type="text"] { width: 100%; padding: 18px; font-size: 1.3rem; border: 2px solid #ddd; border-radius: 10px; outline: none; }
+        .results { display: grid; gap: 15px; margin-top: 30px; }
+        .result-item { background: #f8f9fa; padding: 20px; border-radius: 10px; border-left: 4px solid #667eea; }
+        .result-item.exact-match { border-left: 4px solid #28a745; background: #f1f9f4; }
+        .kanji-display { font-size: 48px; font-weight: bold; margin-bottom: 10px; }
+        .shape-item { display: inline-block; background: #e8f4f8; padding: 4px 10px; border-radius: 4px; margin: 2px; font-size: 14px; border: 1px solid transparent; }
+        .shape-item.matched { background: #c3e6cb; font-weight: bold; color: #155724; border-color: #28a745; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🔍 漢字部首検索 (Graph Link Match)</h1>
+        <div class="file-upload">
+            <label>TTLファイルを読み込む:</label>
+            <input type="file" id="ttlFile" accept=".ttl" />
+            <div id="status"></div>
+        </div>
+        <div class="search-box">
+            <input type="text" id="searchInput" placeholder="例：目ル（構造リンクで検索）" disabled autocomplete="off">
+        </div>
+        <div id="results" class="results"></div>
+    </div>
+
+    <script>
+        let kanjiData = [];
+        let resourceMap = {};
+        let charToUriMap = {};
+
+        const ttlFileInput = document.getElementById('ttlFile');
+        const searchInput = document.getElementById('searchInput');
+        const resultsDiv = document.getElementById('results');
+        const statusDiv = document.getElementById('status');
+
+        ttlFileInput.addEventListener('change', async function(e) {
+            const file = e.target.files[0];
+            if (file) {
+                const text = await file.text();
+                parseTTL(text);
+                statusDiv.innerHTML = `<div class="status success">✓ 解析完了: ${kanjiData.length}件をロード</div>`;
+                searchInput.disabled = false;
+            }
+        });
+
+        function parseTTL(ttlContent) {
+            kanjiData = []; resourceMap = {}; charToUriMap = {};
+            const blocks = ttlContent.split(/\s\.\s*\n/);
+
+            blocks.forEach(block => {
+                const lines = block.trim().split('\n');
+                const subjectMatch = lines[0].match(/<([^>]+)>/);
+                if (!subjectMatch) return;
+                const uri = subjectMatch[1];
+                const id = uri.split('/').pop().replace('+', '');
+
+                const data = {
+                    uri: uri, unicode: "", tsukuri: "",
+                    namae: [], yomi: [], daihyo: "", alts: [], groups: []
+                };
+
+                lines.forEach(line => {
+                    const val = line.match(/"([^"]+)"/)?.[1];
+                    if (line.includes('prop:Unicode')) data.unicode = val;
+                    if (line.includes('prop:つくり')) data.tsukuri = val;
+                    if (line.includes('prop:なまえ')) data.namae.push(val);
+                    if (line.includes('prop:よみ')) data.yomi.push(val);
+                    if (line.includes('prop:代表値')) data.daihyo = val;
+                    if (line.includes('prop:別の言い方')) data.alts.push(val);
+                    if (line.includes('prop:かたち')) {
+                        const match = line.match(/rdf:value\s*([^\]]+)/);
+                        if (match) data.groups.push(match[1].split(',').map(u => u.trim()));
+                    }
+                });
+
+                const shortId = (uri.includes('katati_dic') ? 'dic:' : 'res:') + id;
+                resourceMap[uri] = data;
+                resourceMap[shortId] = data;
+
+                // 文字からURIへの解決マップ
+                const registerChar = (char, targetUri) => { if (char) charToUriMap[char] = targetUri; };
+                registerChar(data.tsukuri, shortId);
+                registerChar(data.daihyo, shortId);
+                data.alts.forEach(alt => alt.split(',').forEach(a => registerChar(a.trim(), shortId)));
+
+                if (!uri.includes('katati_dic')) kanjiData.push(data);
+            });
+        }
+
+        function unicodeToChar(uStr) {
+            const hex = uStr.replace(/dic:|res:|U|\+/g, '');
+            try { return String.fromCodePoint(parseInt(hex, 16)); } catch(e) { return ''; }
+        }
+
+        searchInput.addEventListener('input', function() {
+            const query = this.value.trim();
+            if (!query) { resultsDiv.innerHTML = ''; return; }
+
+            const queryChars = Array.from(query);
+            const targetUris = queryChars.map(c => charToUriMap[c] || null);
+
+            const results = kanjiData.map(item => {
+                let score = 0;
+                // 全てのクエリ文字が「このリソース」に紐付いているか
+                const allMatched = targetUris.every((tUri, idx) => {
+                    const qChar = queryChars[idx];
+                    // 1. 本人の情報と一致
+                    if (item.tsukuri === qChar || item.namae.some(n => n.includes(qChar))) return true;
+                    // 2. 構成要素(URIリンク)を辿って一致するか
+                    return item.groups.some(group =>
+                        group.some(gUri => {
+                            if (tUri && gUri === tUri) return true;
+                            // リンク先の情報を解決して文字を比較
+                            const res = resourceMap[gUri];
+                            const resChar = res ? (res.tsukuri || res.daihyo) : unicodeToChar(gUri);
+                            return resChar === qChar;
+                        })
+                    );
+                });
+
+                if (item.tsukuri === query) score = 1000;
+                else if (allMatched) score = 800;
+
+                return { item, score, targetUris, queryChars };
+            }).filter(r => r.score > 0).sort((a, b) => b.score - a.score);
+
+            renderResults(results, targetUris, queryChars);
+        });
+
+        function renderResults(results, targetUris, queryChars) {
+            if (results.length === 0) {
+                resultsDiv.innerHTML = '<div class="no-results">見つかりませんでした</div>';
+                return;
+            }
+            resultsDiv.innerHTML = results.map(r => {
+                const item = r.item;
+                let groupsHtml = '';
+                item.groups.forEach((group, idx) => {
+                    groupsHtml += `<div class="shape-display">`;
+                    group.forEach(uri => {
+                        const res = resourceMap[uri];
+                        const char = res ? (res.tsukuri || res.daihyo) : unicodeToChar(uri);
+                        const matched = targetUris.includes(uri) || queryChars.includes(char);
+                        groupsHtml += `<span class="shape-item ${matched ? 'matched' : ''}">${char}</span>`;
+                    });
+                    groupsHtml += `</div>`;
+                });
+
+                return `<div class="result-item ${r.score === 1000 ? 'exact-match' : ''}">
+                    <div class="kanji-display">${item.tsukuri || '?'}</div>
+                    <div class="name-display">${item.namae.join(' / ')}</div>
+                    ${groupsHtml}
+                </div>`;
+            }).join('');
+        }
+    </script>
+</body>
+</html>
