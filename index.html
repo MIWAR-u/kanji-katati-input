@@ -4,7 +4,6 @@
 <meta charset="UTF-8">
 <title>漢字かたちサーチ</title>
 <style>
-/* デザイン：二つ目のコードを維持 */
 * { margin: 0; padding: 0; box-sizing: border-box; }
 body { font-family: 'Hiragino Kaku Gothic Pro', 'Meiryo', sans-serif; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); min-height: 100vh; padding: 20px; }
 .container { max-width: 800px; margin: 0 auto; background: white; border-radius: 20px; box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3); padding: 40px; }
@@ -239,7 +238,6 @@ queryInput.addEventListener('input', () => {
         r.item.groups.forEach((g, i) => {
             h += `<div class="shape-display">`;
             g.forEach(u => {
-                // ここでクエリに含まれるものだけをハイライトする判定
                 const isM = (i === r.matchedGroupIdx && r.matchedUris.has(u));
                 const isS = !unicodeToChar(u);
                 h += `<span class="shape-item ${isM ? 'matched' : ''} ${isS ? 'special' : ''}">${getDisplayChar(u)}</span>`;
@@ -252,3 +250,4 @@ queryInput.addEventListener('input', () => {
 </script>
 </body>
 </html>
+
