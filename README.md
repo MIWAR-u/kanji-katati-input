@@ -1,6 +1,7 @@
 # １）基礎データ 
 ## 【データセットの構成】
 本LODは4つのデータセットから構成される。
+
 	①　katati（.txt .xlsx .ttl ）
 	②　katati_dic（.txt .xlsx .ttl ）
 	③　katati_unicode（.txt .xlsx .ttl ）
