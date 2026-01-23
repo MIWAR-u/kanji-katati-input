@@ -127,7 +127,7 @@ CHISE文字モデルを活用した漢字検索システムでは、漢字の構
 
 ---
 #### <<グラフ構造の可視化>>
-可視化際し、以下のツールおよび解説記事を活用させていただきました。
+可視化に際し、以下のツールおよび解説記事を活用させていただきました。
 この場を借りて御礼申し上げます。
 
 神崎正英. (n.d.). ARC2によるRDFグラフの視覚化: Turtle, RDF/XML, JSON-LD, TriG, Microdata. Retrieved January 23, 2026, from https://www.kanzaki.com/works/2009/pub/graph-draw
