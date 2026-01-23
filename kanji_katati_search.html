@@ -1,170 +1,254 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-    <meta charset="UTF-8">
-    <title>漢字部首検索アプリ - 完全LODリンク対応版</title>
-    <style>
-        /* CSSは元のデザインを厳守 */
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: 'Hiragino Kaku Gothic Pro', 'Meiryo', sans-serif; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); min-height: 100vh; padding: 20px; }
-        .container { max-width: 850px; margin: 0 auto; background: white; border-radius: 20px; box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3); padding: 40px; }
-        h1 { text-align: center; color: #333; margin-bottom: 30px; }
-        .file-upload { margin-bottom: 30px; padding: 20px; background: #f8f9fa; border-radius: 10px; border: 2px dashed #ddd; }
-        .status { padding: 10px; border-radius: 5px; margin-top: 10px; font-size: 14px; }
-        .status.success { background: #d4edda; color: #155724; }
-        input[type="text"] { width: 100%; padding: 18px; font-size: 1.3rem; border: 2px solid #ddd; border-radius: 10px; outline: none; }
-        .results { display: grid; gap: 15px; margin-top: 30px; }
-        .result-item { background: #f8f9fa; padding: 20px; border-radius: 10px; border-left: 4px solid #667eea; }
-        .result-item.exact-match { border-left: 4px solid #28a745; background: #f1f9f4; }
-        .kanji-display { font-size: 48px; font-weight: bold; margin-bottom: 10px; }
-        .shape-item { display: inline-block; background: #e8f4f8; padding: 4px 10px; border-radius: 4px; margin: 2px; font-size: 14px; border: 1px solid transparent; }
-        .shape-item.matched { background: #c3e6cb; font-weight: bold; color: #155724; border-color: #28a745; }
-    </style>
+<meta charset="UTF-8">
+<title>漢字かたちサーチ</title>
+<style>
+/* デザイン：二つ目のコードを維持 */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Hiragino Kaku Gothic Pro', 'Meiryo', sans-serif; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); min-height: 100vh; padding: 20px; }
+.container { max-width: 800px; margin: 0 auto; background: white; border-radius: 20px; box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3); padding: 40px; }
+h1 { text-align: center; color: #333; margin-bottom: 30px; font-size: 2em; }
+.search-container { margin-bottom: 25px; }
+input[type="text"] { width: 100%; padding: 18px; font-size: 1.3rem; border: 2px solid #ddd; border-radius: 10px; outline: none; }
+.status { padding: 12px; border-radius: 8px; margin-bottom: 15px; font-size: 14px; background: #e3f2fd; color: #0d47a1; transition: all 0.3s; }
+.result-item { background: #f8f9fa; padding: 25px; border-radius: 15px; border-left: 5px solid #667eea; margin-top: 20px; }
+.result-item.perfect-hit { border-left: 10px solid #e91e63; background: #fce4ec; }
+.result-item.shape-exact { border-left: 10px solid #9c27b0; background: #f3e5f5; }
+.result-item.direct-hit { border-left: 8px solid #ff9800; background: #fffde7; }
+.kanji-display { font-size: 4rem; font-weight: bold; color: #333; }
+.name-display { font-size: 1.2rem; color: #667eea; font-weight: bold; margin-bottom: 10px; }
+.shape-display { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 10px; }
+.shape-item { background: #e3f2fd; padding: 10px 20px; border-radius: 10px; font-size: 1.5rem; border: 2px solid transparent; }
+.shape-item.special { background: #fff3cd; font-size: 1rem; font-style: italic; }
+.matched { background: #c3e6cb !important; border-color: #28a745 !important; font-weight: bold; }
+.badge { color: white; padding: 4px 8px; border-radius: 5px; font-size: 0.8rem; margin-left: 10px; vertical-align: middle; }
+.badge-perfect { background: #e91e63; }
+.badge-shape-exact { background: #9c27b0; }
+.badge-direct { background: #ff9800; }
+.info { background: #fff3cd; padding: 15px; border-radius: 8px; margin-bottom: 20px; font-size: 14px; color: #856404; }
+</style>
 </head>
+
 <body>
-    <div class="container">
-        <h1>🔍 漢字部首検索 (Graph Link Match)</h1>
-        <div class="file-upload">
-            <label>TTLファイルを読み込む:</label>
-            <input type="file" id="ttlFile" accept=".ttl" />
-            <div id="status"></div>
-        </div>
-        <div class="search-box">
-            <input type="text" id="searchInput" placeholder="例：目ル（構造リンクで検索）" disabled autocomplete="off">
-        </div>
-        <div id="results" class="results"></div>
-    </div>
+<div class="container">
+<h1>🔍 漢字かたちサーチ</h1>
+<div id="status" class="status">TTLファイルを読み込み中...</div>
 
-    <script>
-        let kanjiData = [];
-        let resourceMap = {};
-        let charToUriMap = {};
+<div class="info">
+💡 検索方法: 複数の形を検索する場合は、スペースで区切ってください<br>
+例: 「目 ル」「はらい」「みみ」「四角」
+</div>
 
-        const ttlFileInput = document.getElementById('ttlFile');
-        const searchInput = document.getElementById('searchInput');
-        const resultsDiv = document.getElementById('results');
-        const statusDiv = document.getElementById('status');
+<div class="search-container">
+<input type="text" id="searchInput" placeholder="例：目 ル、はらい、みみ、四角、にんべん" disabled>
+</div>
 
-        ttlFileInput.addEventListener('change', async function(e) {
-            const file = e.target.files[0];
-            if (file) {
-                const text = await file.text();
-                parseTTL(text);
-                statusDiv.innerHTML = `<div class="status success">✓ 解析完了: ${kanjiData.length}件をロード</div>`;
-                searchInput.disabled = false;
+<div id="results"></div>
+</div>
+
+<script>
+let kanjiData = [];
+let resourceMap = {};
+let termToUriMap = {};
+
+const queryInput = document.getElementById('searchInput');
+const resultsDiv = document.getElementById('results');
+const statusDiv = document.getElementById('status');
+
+window.onload = async () => {
+    try {
+        const response = await fetch('Kanji_katati_lod.ttl');
+        const text = await response.text();
+        parseTTL(text);
+        statusDiv.innerText = `✓ 読込完了: ${kanjiData.length}件をロードしました`;
+        statusDiv.style.background = "#d4edda";
+        queryInput.disabled = false;
+        queryInput.focus();
+    } catch (err) {
+        statusDiv.innerText = `❌ Kanji_katati_lod.ttl が見つかりません。`;
+        statusDiv.style.background = "#f8d7da";
+    }
+};
+
+function parseTTL(text) {
+    kanjiData = []; resourceMap = {}; termToUriMap = {};
+    const blocks = text.split(/\s\.\s*\n/).filter(b => b.trim());
+    blocks.forEach(block => {
+        const lines = block.trim().split('\n');
+        const subject = lines[0].match(/<([^>]+)>/)?.[1];
+        if (!subject) return;
+
+        const data = { uri: subject, tsukuri: "", daihyo: "", namae: [], yomi: [], groups: [], alts: [] };
+        lines.forEach(line => {
+            const val = line.match(/"([^"]+)"/)?.[1];
+            if (line.includes('prop:つくり')) data.tsukuri = val;
+            if (line.includes('prop:代表値')) data.daihyo = val;
+            if (line.includes('prop:なまえ')) data.namae.push(val);
+            if (line.includes('prop:よみ')) data.yomi.push(val);
+            if (line.includes('prop:別の言い方')) data.alts.push(val);
+            if (line.includes('prop:かたち')) {
+                const m = line.match(/rdf:value\s*([^\]]+)/);
+                if (m) data.groups.push(m[1].split(',').map(u => u.trim()));
             }
         });
 
-        function parseTTL(ttlContent) {
-            kanjiData = []; resourceMap = {}; charToUriMap = {};
-            const blocks = ttlContent.split(/\s\.\s*\n/);
+        const shortId = (subject.includes('katati_dic') ? 'dic:' : 'res:') + subject.split('/').pop().replace('+', '');
+        resourceMap[subject] = data;
+        resourceMap[shortId] = data;
 
-            blocks.forEach(block => {
-                const lines = block.trim().split('\n');
-                const subjectMatch = lines[0].match(/<([^>]+)>/);
-                if (!subjectMatch) return;
-                const uri = subjectMatch[1];
-                const id = uri.split('/').pop().replace('+', '');
+        const terms = [data.tsukuri, data.daihyo, ...data.namae, ...data.yomi, ...data.alts];
+        terms.forEach(t => {
+            if (!t) return;
+            if (!termToUriMap[t]) termToUriMap[t] = new Set();
+            termToUriMap[t].add(subject);
+            termToUriMap[t].add(shortId);
+        });
 
-                const data = {
-                    uri: uri, unicode: "", tsukuri: "",
-                    namae: [], yomi: [], daihyo: "", alts: [], groups: []
-                };
+        kanjiData.push(data);
+    });
+}
 
-                lines.forEach(line => {
-                    const val = line.match(/"([^"]+)"/)?.[1];
-                    if (line.includes('prop:Unicode')) data.unicode = val;
-                    if (line.includes('prop:つくり')) data.tsukuri = val;
-                    if (line.includes('prop:なまえ')) data.namae.push(val);
-                    if (line.includes('prop:よみ')) data.yomi.push(val);
-                    if (line.includes('prop:代表値')) data.daihyo = val;
-                    if (line.includes('prop:別の言い方')) data.alts.push(val);
-                    if (line.includes('prop:かたち')) {
-                        const match = line.match(/rdf:value\s*([^\]]+)/);
-                        if (match) data.groups.push(match[1].split(',').map(u => u.trim()));
-                    }
+function unicodeToChar(uStr) {
+    const hex = uStr.replace(/dic:|res:|U|\+/g, '');
+    try {
+        const cp = parseInt(hex, 16);
+        if (isNaN(cp)) return null;
+        return String.fromCodePoint(cp);
+    } catch { return null; }
+}
+
+function getDisplayChar(uri) {
+    const res = resourceMap[uri];
+    if (res) return res.tsukuri || res.daihyo;
+    return unicodeToChar(uri) || uri;
+}
+
+function getQueryUriSet(input) {
+    let s = termToUriMap[input] || new Set();
+    s.add(`res:${input}`);
+    s.add(`dic:${input}`);
+    return s;
+}
+
+function containsInHierarchy(uri, queryUriSet, visited = new Set()) {
+    if (visited.has(uri)) return false;
+    visited.add(uri);
+    if (queryUriSet.has(uri)) return true;
+    const res = resourceMap[uri];
+    if (!res) return false;
+    for (let g of res.groups) {
+        for (let c of g) {
+            if (containsInHierarchy(c, queryUriSet, visited)) return true;
+        }
+    }
+    return false;
+}
+
+function isShapeNameExactMatch(item, queryPart) {
+    if (item.tsukuri === queryPart) return true;
+    const resUri = `res:${queryPart}`;
+    if (item.uri === resUri) return true;
+    return false;
+}
+
+queryInput.addEventListener('input', () => {
+    const query = queryInput.value.trim();
+    if (!query) { resultsDiv.innerHTML = ''; return; }
+
+    const parts = query.split(/[\s　]+/).filter(Boolean);
+    const queryUriSets = parts.map(p => getQueryUriSet(p));
+
+    const results = kanjiData.map(item => {
+        let score = 0;
+        let matchedGroupIdx = -1;
+        let matchedUris = new Set();
+        let matchType = '';
+
+        if (parts.length === 1 && isShapeNameExactMatch(item, parts[0])) {
+            score = 1300;
+            matchType = 'shape-exact';
+        } else if (item.namae.includes(query) || item.tsukuri === query) {
+            score = 1000;
+            matchType = 'name-exact';
+        } else {
+            item.groups.forEach((group, gIdx) => {
+                let currentMatchedUris = new Set();
+                let coveredParts = new Set();
+                
+                group.forEach(gUri => {
+                    queryUriSets.forEach((set, pIdx) => {
+                        if (containsInHierarchy(gUri, set)) {
+                            coveredParts.add(pIdx);
+                            currentMatchedUris.add(gUri); // ここでURIを記録してハイライトに回す
+                        }
+                    });
                 });
 
-                const shortId = (uri.includes('katati_dic') ? 'dic:' : 'res:') + id;
-                resourceMap[uri] = data;
-                resourceMap[shortId] = data;
+                if (coveredParts.size === queryUriSets.length) {
+                    const directCovered = new Set();
+                    group.forEach(gUri => {
+                        queryUriSets.forEach((set, pIdx) => {
+                            if (set.has(gUri)) directCovered.add(pIdx);
+                        });
+                    });
 
-                // 文字からURIへの解決マップ
-                const registerChar = (char, targetUri) => { if (char) charToUriMap[char] = targetUri; };
-                registerChar(data.tsukuri, shortId);
-                registerChar(data.daihyo, shortId);
-                data.alts.forEach(alt => alt.split(',').forEach(a => registerChar(a.trim(), shortId)));
+                    const isStrictPerfect = group.length === parts.length && directCovered.size === parts.length;
 
-                if (!uri.includes('katati_dic')) kanjiData.push(data);
+                    if (isStrictPerfect && score < 1200) {
+                        score = 1200;
+                        matchedGroupIdx = gIdx;
+                        matchedUris = currentMatchedUris;
+                        matchType = 'perfect';
+                    } else if (score < 800) {
+                        score = 800;
+                        matchedGroupIdx = gIdx;
+                        matchedUris = currentMatchedUris;
+                        matchType = 'partial';
+                    }
+                }
             });
         }
 
-        function unicodeToChar(uStr) {
-            const hex = uStr.replace(/dic:|res:|U|\+/g, '');
-            try { return String.fromCodePoint(parseInt(hex, 16)); } catch(e) { return ''; }
+        if (score === 0 && item.yomi.includes(query)) {
+            score = 700;
+            matchType = 'yomi';
         }
 
-        searchInput.addEventListener('input', function() {
-            const query = this.value.trim();
-            if (!query) { resultsDiv.innerHTML = ''; return; }
+        return { item, score, matchedGroupIdx, matchedUris, matchType };
+    }).filter(r => r.score > 0).sort((a, b) => b.score - a.score);
 
-            const queryChars = Array.from(query);
-            const targetUris = queryChars.map(c => charToUriMap[c] || null);
+    resultsDiv.innerHTML = results.map(r => {
+        let badge = "";
+        let itemClass = "";
+        
+        if (r.matchType === 'shape-exact') {
+            badge = '<span class="badge badge-shape-exact">形状名一致</span>';
+            itemClass = "shape-exact";
+        } else if (r.matchType === 'perfect') { 
+            badge = '<span class="badge badge-perfect">完全構成一致</span>'; 
+            itemClass = "perfect-hit"; 
+        } else if (r.matchType === 'name-exact') { 
+            badge = '<span class="badge badge-direct">なまえ一致</span>'; 
+            itemClass = "direct-hit"; 
+        }
 
-            const results = kanjiData.map(item => {
-                let score = 0;
-                // 全てのクエリ文字が「このリソース」に紐付いているか
-                const allMatched = targetUris.every((tUri, idx) => {
-                    const qChar = queryChars[idx];
-                    // 1. 本人の情報と一致
-                    if (item.tsukuri === qChar || item.namae.some(n => n.includes(qChar))) return true;
-                    // 2. 構成要素(URIリンク)を辿って一致するか
-                    return item.groups.some(group =>
-                        group.some(gUri => {
-                            if (tUri && gUri === tUri) return true;
-                            // リンク先の情報を解決して文字を比較
-                            const res = resourceMap[gUri];
-                            const resChar = res ? (res.tsukuri || res.daihyo) : unicodeToChar(gUri);
-                            return resChar === qChar;
-                        })
-                    );
-                });
-
-                if (item.tsukuri === query) score = 1000;
-                else if (allMatched) score = 800;
-
-                return { item, score, targetUris, queryChars };
-            }).filter(r => r.score > 0).sort((a, b) => b.score - a.score);
-
-            renderResults(results, targetUris, queryChars);
+        let h = `<div class="result-item ${itemClass}">`;
+        h += `<div class="kanji-display">${r.item.tsukuri || r.item.daihyo || '?'}${badge}</div>`;
+        h += `<div class="name-display">${r.item.namae.join(' / ')}</div>`;
+        r.item.groups.forEach((g, i) => {
+            h += `<div class="shape-display">`;
+            g.forEach(u => {
+                // ここでクエリに含まれるものだけをハイライトする判定
+                const isM = (i === r.matchedGroupIdx && r.matchedUris.has(u));
+                const isS = !unicodeToChar(u);
+                h += `<span class="shape-item ${isM ? 'matched' : ''} ${isS ? 'special' : ''}">${getDisplayChar(u)}</span>`;
+            });
+            h += `</div>`;
         });
-
-        function renderResults(results, targetUris, queryChars) {
-            if (results.length === 0) {
-                resultsDiv.innerHTML = '<div class="no-results">見つかりませんでした</div>';
-                return;
-            }
-            resultsDiv.innerHTML = results.map(r => {
-                const item = r.item;
-                let groupsHtml = '';
-                item.groups.forEach((group, idx) => {
-                    groupsHtml += `<div class="shape-display">`;
-                    group.forEach(uri => {
-                        const res = resourceMap[uri];
-                        const char = res ? (res.tsukuri || res.daihyo) : unicodeToChar(uri);
-                        const matched = targetUris.includes(uri) || queryChars.includes(char);
-                        groupsHtml += `<span class="shape-item ${matched ? 'matched' : ''}">${char}</span>`;
-                    });
-                    groupsHtml += `</div>`;
-                });
-
-                return `<div class="result-item ${r.score === 1000 ? 'exact-match' : ''}">
-                    <div class="kanji-display">${item.tsukuri || '?'}</div>
-                    <div class="name-display">${item.namae.join(' / ')}</div>
-                    ${groupsHtml}
-                </div>`;
-            }).join('');
-        }
-    </script>
+        return h + `</div>`;
+    }).join('');
+});
+</script>
 </body>
 </html>
