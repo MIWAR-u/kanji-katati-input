@@ -20,7 +20,7 @@
 		
 ①～③のデータについてはLinkData.org上のページにても公開している。
 
-LinkData.orgリンク：http://linkdata.org/work/rdf1s10400i?key=9b4ca49c07eff43e68e104591692c49ff494f4f22c47810e90a6bccb7f68254730df8edbc52c9099db017e5c71b3a04a
+LinkData.orgリンク：http://linkdata.org/work/rdf1s10400i
 
 
 #### ①　katati（.txt .xlsx .ttl ）について
