@@ -7,13 +7,10 @@
 	③　katati_unicode（.txt .xlsx .ttl ）
 	④　Kanji-katati-LOD（.ttl ）
 		
-①～④のデータについてはLinkData.org上のページにて公開している。
-
-但し、④のデータについてはLinkData.orgにおいてアップロード形式が制限されていたため、別途githubに公開している。
+①～③のデータについてはLinkData.org上のページにても公開している。
 
 LinkData.orgリンク：http://linkdata.org/work/rdf1s10400i?key=9b4ca49c07eff43e68e104591692c49ff494f4f22c47810e90a6bccb7f68254730df8edbc52c9099db017e5c71b3a04a
 
-githubリンク： https://github.com/MIWAR-u/kanji-katati-input/tree/main
 
 ### ①　katati（.txt .xlsx .ttl ）について
 本データは漢字構成とその「よみ」「かたち」によって構成されている。
