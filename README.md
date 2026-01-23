@@ -120,10 +120,10 @@ CHISE文字モデルを活用した漢字検索システムでは、漢字の構
 ### グラフ構造の可視化
 本プロジェクトのグラフ可視化には、以下のツールおよび解説記事を活用させていただきました。
 この場を借りて御礼申し上げます。
+
 ARC2によるRDFグラフの視覚化: Turtle, RDF/XML, JSON-LD, TriG, Microdata. (n.d.). Retrieved January 23, 2026, from https://www.kanzaki.com/works/2009/pub/graph-draw
 
 「ARC2によるRDFグラフの視覚化」をPythonで利用する. (2024, June 7). Zenn. https://zenn.dev/nakamura196/articles/b8b471d62af4e8
-
 
 リポジトリ内のデータを可視化した結果は以下の通りです。
 
