@@ -1,3 +1,35 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>漢字かたちサーチ</title>
+<style>
+/* デザイン：二つ目のコードを維持 */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Hiragino Kaku Gothic Pro', 'Meiryo', sans-serif; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); min-height: 100vh; padding: 20px; }
+.container { max-width: 800px; margin: 0 auto; background: white; border-radius: 20px; box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3); padding: 40px; }
+h1 { text-align: center; color: #333; margin-bottom: 30px; font-size: 2em; }
+.search-container { margin-bottom: 25px; }
+input[type="text"] { width: 100%; padding: 18px; font-size: 1.3rem; border: 2px solid #ddd; border-radius: 10px; outline: none; }
+.status { padding: 12px; border-radius: 8px; margin-bottom: 15px; font-size: 14px; background: #e3f2fd; color: #0d47a1; transition: all 0.3s; }
+.result-item { background: #f8f9fa; padding: 25px; border-radius: 15px; border-left: 5px solid #667eea; margin-top: 20px; }
+.result-item.perfect-hit { border-left: 10px solid #e91e63; background: #fce4ec; }
+.result-item.shape-exact { border-left: 10px solid #9c27b0; background: #f3e5f5; }
+.result-item.direct-hit { border-left: 8px solid #ff9800; background: #fffde7; }
+.kanji-display { font-size: 4rem; font-weight: bold; color: #333; }
+.name-display { font-size: 1.2rem; color: #667eea; font-weight: bold; margin-bottom: 10px; }
+.shape-display { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 10px; }
+.shape-item { background: #e3f2fd; padding: 10px 20px; border-radius: 10px; font-size: 1.5rem; border: 2px solid transparent; }
+.shape-item.special { background: #fff3cd; font-size: 1rem; font-style: italic; }
+.matched { background: #c3e6cb !important; border-color: #28a745 !important; font-weight: bold; }
+.badge { color: white; padding: 4px 8px; border-radius: 5px; font-size: 0.8rem; margin-left: 10px; vertical-align: middle; }
+.badge-perfect { background: #e91e63; }
+.badge-shape-exact { background: #9c27b0; }
+.badge-direct { background: #ff9800; }
+.info { background: #fff3cd; padding: 15px; border-radius: 8px; margin-bottom: 20px; font-size: 14px; color: #856404; }
+</style>
+</head>
+
 <body>
 <div class="container">
 <h1>漢字かたちサーチ</h1>
